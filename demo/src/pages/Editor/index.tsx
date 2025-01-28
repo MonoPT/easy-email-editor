@@ -192,18 +192,20 @@ export default function Editor() {
   const history = useHistory();
   const tpd = useAppSelector('template');
 
-  let templateData = null;
+  let templateData = tpd;
 
   if (tpd) {
     let templatePath = new URLSearchParams(window.location.search).get('path')?.replaceAll("%20", "_").replaceAll(" ", "_").replaceAll("'", "");
 
-    let d = makeRequest(`http://localhost:3000/src/templates/${templatePath}`);
-    let tp = JSON.parse(d);
+    console.log(templatePath);
 
-    if (tp.data) {
-      templateData = tp.data;
-    } else {
-      templateData = tpd;
+    if (new URLSearchParams(window.location.search).get('path')) {
+      let d = makeRequest(`http://localhost:3000/src/templates/${templatePath}`);
+      let tp = JSON.parse(d);
+
+      if (tp.data) {
+        templateData = tp.data;
+      }
     }
   }
 
