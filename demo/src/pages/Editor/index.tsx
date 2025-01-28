@@ -56,6 +56,7 @@ import { Uploader } from '@demo/utils/Uploader';
 import enUS from '@arco-design/web-react/es/locale/en-US';
 
 import { useShowCommercialEditor } from '@demo/hooks/useShowCommercialEditor';
+import { json } from 'stream/consumers';
 
 const defaultCategories: ExtensionProps['categories'] = [
   {
@@ -169,22 +170,45 @@ const fontList = [
   'Courier New',
   'Georgia',
   'Lato',
-  'Montserrat',
-  '黑体',
-  '仿宋',
-  '楷体',
-  '标楷体',
-  '华文仿宋',
-  '华文楷体',
-  '宋体',
-  '微软雅黑',
+  'Montserrat'
 ].map(item => ({ value: item, label: item }));
+
+function makeRequest(url) {
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", url, false); // false makes it synchronous
+  xhr.send();
+
+  if (xhr.status === 200) {
+    return xhr.responseText; // Returns response synchronously
+  } else {
+    return "{}";
+  }
+}
+
 
 export default function Editor() {
   const { featureEnabled } = useShowCommercialEditor();
   const dispatch = useDispatch();
   const history = useHistory();
-  const templateData = useAppSelector('template');
+  const tpd = useAppSelector('template');
+
+  let templateData = null;
+
+  if (tpd) {
+    let templatePath = new URLSearchParams(window.location.search).get('path')?.replaceAll("%20", "_").replaceAll(" ", "_").replaceAll("'", "");
+
+    let d = makeRequest(`http://localhost:3000/src/templates/${templatePath}`);
+    let tp = JSON.parse(d);
+
+    if (tp.data) {
+      templateData = tp.data;
+    } else {
+      templateData = tpd;
+    }
+  }
+
+
+
 
   const { id, userId } = useQuery();
   const loading = useLoading(template.loadings.fetchById);
@@ -320,6 +344,21 @@ export default function Editor() {
     saveAs(new Blob([html], { type: 'text/html' }), 'easy-email.html');
   };
 
+  const onExportCopyHTML = (values: IEmailTemplate) => {
+    const mjmlString = JsonToMjml({
+      data: values.content,
+      mode: 'production',
+      context: values.content,
+      dataSource: mergeTags,
+    });
+
+    const html = mjml(mjmlString, {}).html;
+
+    pushEvent({ event: 'HTMLExport', payload: { values, mergeTags } });
+    navigator.clipboard.writeText(html);
+    //saveAs(new Blob([html], { type: 'text/html' }), 'easy-email.html');
+  };
+
   const onExportJSON = (values: IEmailTemplate) => {
     navigator.clipboard.writeText(JSON.stringify(values, null, 2));
     saveAs(
@@ -430,6 +469,14 @@ export default function Editor() {
                             >
                               Export HTML
                             </Menu.Item>
+
+                            <Menu.Item
+                              key='Copy HTML'
+                              onClick={() => onExportCopyHTML(values)}
+                            >
+                              Copy HTML
+                            </Menu.Item>
+
                             <Menu.Item
                               key='Export JSON'
                               onClick={() => onExportJSON(values)}
@@ -443,13 +490,13 @@ export default function Editor() {
                           <strong>Export</strong>
                         </Button>
                       </Dropdown>
-                      <Button
+                      {/*/*<Button
                         type='primary'
                         target='_blank'
                         href='https://demo.easyemail.pro?utm_source=easyemail'
                       >
                         Try commercial version
-                      </Button>
+                      </Button>*/}
                     </Stack>
                   }
                 />

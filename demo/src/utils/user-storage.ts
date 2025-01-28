@@ -20,6 +20,9 @@ export class UserStorage {
             },
             baseURL: 'https://www.maocanhua.cn',
           });
+
+          console.log("user info: ", data);
+
           account = data;
         } catch (error) {
           this.logout();
@@ -38,6 +41,7 @@ export class UserStorage {
         }
       );
 
+      console.log("user data: ", data);
       account = data;
     }
     window.sessionStorage.setItem(sessionKey, JSON.stringify(account));

@@ -86,12 +86,15 @@ export function CardItem(props: CardItemProps) {
             </div>
             <div className={styles.listItem}>
               <Link
-                to={`/editor?id=${data.article_id}&userId=${data.user_id}`}
-                onClick={() =>
-                  pushEvent({
+                to={`/editor?path=${data.path}`}
+                onClick={() => {
+                  ///editor?id=${data.article_id}&userId=${data.user_id}
+                  //`/editor?path=${data.path}`
+                  return pushEvent({
                     event: 'Edit',
                     payload: { article_id: data.article_id, title: data.title },
-                  })
+                  });
+                }
                 }
               >
                 <IconEdit />
