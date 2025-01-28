@@ -8,7 +8,7 @@ import { CardItem } from './components/CardItem';
 import { Stack } from '@demo/components/Stack';
 import { history } from '@demo/utils/history';
 import { pushEvent } from '@demo/utils/pushEvent';
-//import templates from '@demo/config/templates.json';
+import templates from '@demo/config/templates.json';
 
 
 function makeRequest(url) {
@@ -31,7 +31,7 @@ export default function Home() {
   //https://assets.maocanhua.cn/5523abbd-6484-40b0-a368-bbea5e647bf4-
   let templates = JSON.parse(makeRequest("http://localhost:4000/api/templates"));
 
-  console.log(templates);
+
 
   useEffect(async () => {
     dispatch(templateList.actions.fetch(undefined));
