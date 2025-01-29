@@ -43,15 +43,17 @@ export default function Frame({
       <Layout>
         <Sider width={200}>
           <Menu
-            defaultSelectedKeys={['1']}
+            defaultSelectedKeys={['0']}
             defaultOpenKeys={['sub1']}
             style={{ height: '100%', borderRight: 0 }}
           >
             <SubMenu
               key='sub1'
-              title='Templates'
+              title='Folders'
             >
-              <Menu.Item key='1'>Templates</Menu.Item>
+              <Menu.Item key='0' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", {detail: 0}))}>All Templates</Menu.Item>
+              <Menu.Item key='1' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", {detail: 1}))}>Folder 1</Menu.Item>
+              <Menu.Item key='2' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", {detail: 2}))}>Folder 2</Menu.Item>
             </SubMenu>
           </Menu>
         </Sider>

@@ -394,6 +394,7 @@ export default function Editor() {
         summary: values.subTitle,
         created_at: createdTime,
         updated_at: timestamp,
+        folder: 1, //See best way to create new folders
         data: values,
         picture: imageBase64,
       };
@@ -585,13 +586,7 @@ export default function Editor() {
                           <strong>Export</strong>
                         </Button>
                       </Dropdown>
-                      {/*/*<Button
-                        type='primary'
-                        target='_blank'
-                        href='https://demo.easyemail.pro?utm_source=easyemail'
-                      >
-                        Try commercial version
-                      </Button>*/}
+                      
                     </Stack>
                   }
                 />

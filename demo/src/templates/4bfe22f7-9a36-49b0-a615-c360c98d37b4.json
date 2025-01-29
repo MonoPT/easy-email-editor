@@ -1,0 +1,63 @@
+{
+  "uuid": "",
+  "title": "Welcome to Easy-email",
+  "summary": "Nice to meet you!",
+  "created_at": 1738155374,
+  "updated_at": 1738155374,
+  "folder": 1,
+  "data": {
+    "subject": "Welcome to Easy-email",
+    "subTitle": "Nice to meet you!",
+    "content": {
+      "type": "page",
+      "data": {
+        "value": {
+          "breakpoint": "480px",
+          "headAttributes": "",
+          "font-size": "14px",
+          "font-weight": "400",
+          "line-height": "1.7",
+          "headStyles": [],
+          "fonts": [],
+          "responsive": true,
+          "font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif",
+          "text-color": "#000000"
+        }
+      },
+      "attributes": {
+        "background-color": "#efeeea",
+        "width": "600px"
+      },
+      "children": [
+        {
+          "type": "advanced_wrapper",
+          "data": {
+            "value": {}
+          },
+          "attributes": {
+            "padding": "20px 0px 20px 0px",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center"
+          },
+          "children": [
+            {
+              "type": "advanced_text",
+              "data": {
+                "value": {
+                  "content": "<font size=\"6\">Make it easy for everyone to compose emails!</font>"
+                }
+              },
+              "attributes": {
+                "padding": "10px 25px 10px 25px",
+                "align": "left"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "picture": "/src/templates/pictures/4bfe22f7-9a36-49b0-a615-c360c98d37b4.png"
+}

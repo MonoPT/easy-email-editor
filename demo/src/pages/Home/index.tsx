@@ -10,6 +10,8 @@ import { history } from '@demo/utils/history';
 import { pushEvent } from '@demo/utils/pushEvent';
 import templates from '@demo/config/templates.json';
 
+import { useState } from 'react';
+
 
 function makeRequest(url) {
   const xhr = new XMLHttpRequest();
@@ -26,15 +28,24 @@ function makeRequest(url) {
 export default function Home() {
   const dispatch = useDispatch();
   const list = useAppSelector('templateList');
+  const [categoria, setCategoria] = useState(0);
 
-  //picture"https://d3k81ch9hvuctc.cloudfront.net/company/S7EvMw/images/84a89d8e-4a57-47d5-b1be-e31e28d63222.png"
-  //https://assets.maocanhua.cn/5523abbd-6484-40b0-a368-bbea5e647bf4-
   let templates = JSON.parse(makeRequest("http://localhost:4000/api/templates"));
-
-
 
   useEffect(async () => {
     dispatch(templateList.actions.fetch(undefined));
+
+    const handleUpdateTemplateTab = (e) => {
+      // Supondo que e.detail tenha a nova categoria
+      console.log(e.detail)
+      setCategoria(e.detail);
+    };
+
+    window.addEventListener('updateTemplateTab', handleUpdateTemplateTab);
+
+    return () => {
+      window.removeEventListener('updateTemplateTab', handleUpdateTemplateTab);
+    };
   }, [dispatch]);
 
 
@@ -55,10 +66,17 @@ export default function Home() {
       <>
         <Stack>
           {[...templates, ...list].map((item) => (
-            <CardItem data={item} key={item.path} />
+            item.folder === categoria || categoria === 0 ? (<CardItem data={item} key={item.path} />) : null
+            
           ))}
         </Stack>
       </>
     </Frame>
   );
 }
+
+/*window.currentTemplateAre = 1;
+
+window.addEventListener("updateTemplateTab", e => {
+  console.log(e.detail)
+});*/ 
