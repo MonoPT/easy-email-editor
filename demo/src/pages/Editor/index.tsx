@@ -1,4 +1,6 @@
 /* eslint-disable react/jsx-wrap-multilines */
+import './style.css';
+import './script';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import template from '@demo/store/template';
@@ -197,6 +199,7 @@ export default function Editor() {
   const tpd = useAppSelector('template');
 
   let templateData = tpd;
+  let templateFolder = 1;
 
   if (tpd) {
     let templatePath = new URLSearchParams(window.location.search).get('path')?.replaceAll("%20", "_").replaceAll(" ", "_").replaceAll("'", "");
@@ -206,6 +209,7 @@ export default function Editor() {
       let tp = JSON.parse(d);
 
       if (tp.data) {
+        templateFolder = tp.folder;
         templateData = tp.data;
         fileUUID = templatePath?.replace(".json", "") || "";
         createdTime = tp.created_at;
@@ -327,7 +331,7 @@ export default function Editor() {
       dataSource: mergeTags,
     });
 
-    
+
     pushEvent({ event: 'MJMLExport', payload: { values, mergeTags } });
     navigator.clipboard.writeText(mjmlString);
     saveAs(new Blob([mjmlString], { type: 'text/mjml' }), 'easy-email.mjml');
@@ -347,13 +351,13 @@ export default function Editor() {
 
     let container = document.createElement("div");
     container.innerHTML = html;
-    
-  
+
+
     //Click on preview button
     let tabWrapper = document.querySelector(".easy-email-editor-tabWrapper ._Stack_1jdgv_1 > ._Item_1jdgv_8");
     let currentActive = tabWrapper?.querySelector(".easy-email-editor-tabActiveItem")! as HTMLElement;
     tabWrapper?.querySelectorAll("button")[1].click();
-    
+
     function sleep(ms) {
       return new Promise(resolve => setTimeout(resolve, ms));
     }
@@ -374,7 +378,7 @@ export default function Editor() {
       DOM.style.height = DOM.scrollHeight + "px";
 
       //CreateImageTemplate
-      let canvas = await html2canvas(DOM, {useCORS: true});
+      let canvas = await html2canvas(DOM, { useCORS: true });
 
       DOM.style.overflow = originalStyle.overflow;
       DOM.style.height = originalStyle.height;
@@ -394,7 +398,7 @@ export default function Editor() {
         summary: values.subTitle,
         created_at: createdTime,
         updated_at: timestamp,
-        folder: 1, //See best way to create new folders
+        folder: templateFolder, //See best way to create new folders
         data: values,
         picture: imageBase64,
       };
@@ -409,8 +413,8 @@ export default function Editor() {
         body: JSON.stringify(payload)
       });
 
-      if(res.status === 200) {
-        console.log("save success")
+      if (res.status === 200) {
+        console.log("save success");
       } else {
         console.error("could not save", res);
       }
@@ -497,7 +501,7 @@ export default function Editor() {
         <style>{blueTheme}</style>
         <EmailEditorProvider
           key={id}
-          height={featureEnabled ? 'calc(100vh - 108px)' : 'calc(100vh - 68px)'}
+          height={false ? 'calc(100vh - 108px)' : 'calc(100vh - 68px)'}
           data={initialValues}
           onUploadImage={onUploadImage}
           fontList={fontList}
@@ -519,12 +523,12 @@ export default function Editor() {
                   onBack={() => history.push('/')}
                   extra={
                     <Stack alignment='center'>
-                        <Button
-                          key='Save Template'
-                          onClick={() => onSaveTemplate(values)}
-                        >
-                          <strong>Save</strong>
-                        </Button>
+                      <Button
+                        key='Save Template'
+                        onClick={() => onSaveTemplate(values)}
+                      >
+                        <strong>Save</strong>
+                      </Button>
 
                       <Dropdown
                         droplist={
@@ -586,7 +590,7 @@ export default function Editor() {
                           <strong>Export</strong>
                         </Button>
                       </Dropdown>
-                      
+
                     </Stack>
                   }
                 />

@@ -1,0 +1,5 @@
+.fixHeightTemp {
+    height: auto !important;
+    max-height: 100svh;
+    overflow: hidden;
+}
