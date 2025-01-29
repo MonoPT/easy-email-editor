@@ -28,7 +28,7 @@ function makeRequest(url) {
 export default function Home() {
   const dispatch = useDispatch();
   const list = useAppSelector('templateList');
-  const [categoria, setCategoria] = useState(0);
+  const [categoria, setCategoria] = useState("0");
 
   let templates = JSON.parse(makeRequest("http://localhost:4000/api/templates"));
 
@@ -37,7 +37,7 @@ export default function Home() {
 
     const handleUpdateTemplateTab = (e) => {
       // Supondo que e.detail tenha a nova categoria
-      console.log(e.detail)
+      console.log(e.detail);
       setCategoria(e.detail);
     };
 
@@ -66,17 +66,11 @@ export default function Home() {
       <>
         <Stack>
           {[...templates, ...list].map((item) => (
-            item.folder === categoria || categoria === 0 ? (<CardItem data={item} key={item.path} />) : null
-            
+            item.folder === categoria || categoria === "0" ? (<CardItem data={item} key={item.path} />) : null
+
           ))}
         </Stack>
       </>
     </Frame>
   );
 }
-
-/*window.currentTemplateAre = 1;
-
-window.addEventListener("updateTemplateTab", e => {
-  console.log(e.detail)
-});*/ 

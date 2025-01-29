@@ -37,6 +37,8 @@ app.get('/api/templates', (req, res) => {
     data = JSON.parse(data);
     data.path = file;
 
+    delete data.data;
+
     templates.push(data);
   });
 
@@ -69,7 +71,7 @@ app.post("/api/template/duplicate", (req, res) => {
 
   const timestamp = Math.floor(Date.now() / 1000);
 
-  loadJsonFile( `${path}/${email_to_clone}.json`, (err, data) => {
+  loadJsonFile(`${path}/${email_to_clone}.json`, (err, data) => {
     if (err) {
       console.log(err);
       return res.status(400).json({
@@ -133,11 +135,11 @@ function saveBase64Image(base64String, filePath) {
 
   // Write the buffer to a file
   fs.writeFile(filePath, buffer, (err) => {
-      if (err) {
-          console.error('Error saving image:', err);
-      } else {
-          console.log('Image saved successfully!');
-      }
+    if (err) {
+      console.error('Error saving image:', err);
+    } else {
+      console.log('Image saved successfully!');
+    }
   });
 }
 
@@ -147,11 +149,11 @@ function saveJsonToFile(data, filePath) {
 
   // Write the JSON string to the file
   fs.writeFile(filePath, jsonString, (err) => {
-      if (err) {
-          console.error('Error saving JSON:', err);
-      } else {
-          console.log('JSON saved successfully!');
-      }
+    if (err) {
+      console.error('Error saving JSON:', err);
+    } else {
+      console.log('JSON saved successfully!');
+    }
   });
 }
 

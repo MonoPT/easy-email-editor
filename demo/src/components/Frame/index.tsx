@@ -4,6 +4,8 @@ import { Stack } from '../Stack';
 import { pushEvent } from '@demo/utils/pushEvent';
 import { githubButtonGenerate } from '@demo/utils/githubButtonGenerate';
 import { useShowCommercialEditor } from '@demo/hooks/useShowCommercialEditor';
+import { Button } from '@arco-design/web-react';
+import './style.css';
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -47,14 +49,41 @@ export default function Frame({
             defaultOpenKeys={['sub1']}
             style={{ height: '100%', borderRight: 0 }}
           >
+            <Button
+              className={"CreateFolderButton"}
+              onClick={() => {
+                //pushEvent({ event: 'Create' });
+                //history.push('/editor');
+                alert("Create Folder");
+              }}
+            >
+              Create new folder
+            </Button>
+
+            <Menu.Item key='0' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", { detail: "0" }))}>All Templates</Menu.Item>
+
             <SubMenu
               key='sub1'
-              title='Folders'
+              title='Templates'
             >
-              <Menu.Item key='0' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", {detail: 0}))}>All Templates</Menu.Item>
-              <Menu.Item key='1' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", {detail: 1}))}>Folder 1</Menu.Item>
-              <Menu.Item key='2' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", {detail: 2}))}>Folder 2</Menu.Item>
+              <Menu.Item key='1' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", { detail: "1" }))}>Folder 1</Menu.Item>
+              <Menu.Item key='2' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", { detail: "2" }))}>Folder 2</Menu.Item>
+              <Menu.Item key='3' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", { detail: "3" }))}>Folder 3</Menu.Item>
+
+              <Button
+                className={"CreateSubFolderButton"}
+                onClick={() => {
+                  //pushEvent({ event: 'Create' });
+                  //history.push('/editor');
+                  alert("Create sub Folder");
+                }}
+              >
+                Create new subfolder
+              </Button>
             </SubMenu>
+
+
+
           </Menu>
         </Sider>
         <Layout style={{ padding: 24 }}>

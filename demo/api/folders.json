@@ -1,0 +1,36 @@
+[
+  {
+    "folderName": "Templates",
+    "subfolders": [
+      {
+        "name": "Folder 1",
+        "id": "1"
+      },
+      {
+        "name": "Folder 2",
+        "id": "2"
+      },
+      {
+        "name": "Folder 3",
+        "id": "3"
+      }
+    ]
+  },
+  {
+    "folderName": "Timeout & Relax",
+    "subfolders": [
+      {
+        "name": "Folder 1",
+        "id": "12"
+      },
+      {
+        "name": "Folder 2",
+        "id": "22"
+      },
+      {
+        "name": "Folder 3",
+        "id": "33"
+      }
+    ]
+  }
+]
