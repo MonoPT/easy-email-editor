@@ -1,17 +1,9 @@
 {
-  "article_id": 472,
+  "uuid": "Food",
   "title": "Welcome to Easy-email",
   "summary": "Nice to meet you!",
-  "picture": "https://d3k81ch9hvuctc.cloudfront.net/company/S7EvMw/images/9e400248-84ea-453c-beea-e7120b340f3c.png",
-  "category_id": 90,
-  "origin_source": "",
-  "readcount": 897,
-  "user_id": 77,
-  "secret": 0,
-  "level": 10,
-  "created_at": 1621128824,
-  "updated_at": 1637740265,
-  "deleted_at": 0,
+  "created_at": 1738150560,
+  "updated_at": 1738150560,
   "data": {
     "subject": "Welcome to Easy-email",
     "subTitle": "Nice to meet you!",
@@ -31,7 +23,7 @@
         }
       },
       "attributes": {
-        "background-color": "#F4F4F4",
+        "background-color": "#fff",
         "width": "600px",
         "css-class": "mjml-body"
       },
@@ -73,7 +65,7 @@
                   "attributes": {
                     "align": "center",
                     "height": "auto",
-                    "src": "https://assets.maocanhua.cn/b999e7e4-9242-4435-a4f6-c8f1d6fdfd96-image.png",
+                    "src": "https://www.arturia.com/images/newsletters/2016-02-ispark/05.jpg",
                     "target": "_blank",
                     "width": "214px",
                     "padding": "10px 25px 10px 25px"
@@ -84,7 +76,7 @@
                   "type": "text",
                   "data": {
                     "value": {
-                      "content": "<p style=\"text-align: center; margin: 10px 0;color:#151e23;font-size:14px;font-family:Georgia,Helvetica,Arial,sans-serif\">Product | Concept | Contact</p>"
+                      "content": "<p style=\"text-align: center; margin: 10px 0;color:#151e23;font-size:14px;font-family:Georgia,Helvetica,Arial,sans-serif\">Product | Concept | Contactus</p>"
                     }
                   },
                   "attributes": {
@@ -181,7 +173,7 @@
                   "type": "text",
                   "data": {
                     "value": {
-                      "content": "<p style=\"line-height: 30px; margin: 10px 0; text-align: center; color:#151e23; font-size:30p; font-family:Georgia,Helvetica,Arial,sans-serif\">- Our Holiday Recipes -</p>"
+                      "content": "<p style=\"line-height: 30px; margin: 10px 0; text-align: center; color:#151e23; font-size:30p; font-family:Georgia,Helvetica,Arial,sans-serif\">- Our Holiday Recipus -</p>"
                     }
                   },
                   "attributes": {
@@ -235,7 +227,7 @@
                   "attributes": {
                     "align": "center",
                     "height": "auto",
-                    "src": "https://assets.maocanhua.cn/be61d137-bb44-4358-a681-dea81d2a8ec1-image.png",
+                    "src": "https://img.freepik.com/free-photo/adorable-brown-white-basenji-dog-smiling-giving-high-five-isolated-white_346278-1657.jpg?t=st=1738149576~exp=1738153176~hmac=d44714d9ccf20609bb524e187da9de68b7d8e6e64ca8d22b401cc2f6a90e9676&w=996",
                     "target": "_blank",
                     "width": "1200px",
                     "padding": "0px 30px 20px 30px"
@@ -656,16 +648,5 @@
       ]
     }
   },
-  "tags": [
-    {
-      "tag_id": 74,
-      "name": "券包",
-      "picture": "http://assets.maocanhua.cn/Fqpjw0PHvSPy4sh0giFmkpuxgKhU",
-      "desc": "券包",
-      "created_at": 1576227276,
-      "user_id": 77,
-      "updated_at": 0,
-      "deleted_at": 0
-    }
-  ]
+  "picture": "/src/templates/pictures/Food.png"
 }

@@ -1,17 +1,9 @@
 {
-  "article_id": 802,
+  "uuid": "Arturia_-_Newsletter",
   "title": "Arturia - Newsletter teste",
   "summary": "Nice to meet you!",
-  "picture": "https://d3k81ch9hvuctc.cloudfront.net/company/S7EvMw/images/77ee66f2-e268-4b53-b0f3-15864fdfbfbb.png",
-  "category_id": 96,
-  "origin_source": "",
-  "readcount": 67,
-  "user_id": 107,
-  "secret": 0,
-  "level": 10,
-  "created_at": 1645697464,
-  "updated_at": 1645865828,
-  "deleted_at": 0,
+  "created_at": 1738150479,
+  "updated_at": 1738150479,
   "data": {
     "subject": "Arturia - Newsletter teste",
     "subTitle": "Nice to meet you!",
@@ -769,16 +761,5 @@
       ]
     }
   },
-  "tags": [
-    {
-      "tag_id": 74,
-      "name": "券包",
-      "picture": "http://assets.maocanhua.cn/Fqpjw0PHvSPy4sh0giFmkpuxgKhU",
-      "desc": "券包",
-      "created_at": 1576227276,
-      "user_id": 77,
-      "updated_at": 0,
-      "deleted_at": 0
-    }
-  ]
+  "picture": "/src/templates/pictures/Arturia_-_Newsletter.png"
 }

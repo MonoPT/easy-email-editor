@@ -58,6 +58,8 @@ import enUS from '@arco-design/web-react/es/locale/en-US';
 import { useShowCommercialEditor } from '@demo/hooks/useShowCommercialEditor';
 import { json } from 'stream/consumers';
 
+import html2canvas from "html2canvas";
+
 const defaultCategories: ExtensionProps['categories'] = [
   {
     label: 'Content',
@@ -185,6 +187,7 @@ function makeRequest(url) {
   }
 }
 
+let fileUUID = "";
 
 export default function Editor() {
   const { featureEnabled } = useShowCommercialEditor();
@@ -197,20 +200,16 @@ export default function Editor() {
   if (tpd) {
     let templatePath = new URLSearchParams(window.location.search).get('path')?.replaceAll("%20", "_").replaceAll(" ", "_").replaceAll("'", "");
 
-    console.log(templatePath);
-
     if (new URLSearchParams(window.location.search).get('path')) {
       let d = makeRequest(`http://localhost:3000/src/templates/${templatePath}`);
       let tp = JSON.parse(d);
 
       if (tp.data) {
         templateData = tp.data;
+        fileUUID = templatePath?.replace(".json", "") || "";
       }
     }
   }
-
-
-
 
   const { id, userId } = useQuery();
   const loading = useLoading(template.loadings.fetchById);
@@ -326,9 +325,90 @@ export default function Editor() {
       dataSource: mergeTags,
     });
 
+    
     pushEvent({ event: 'MJMLExport', payload: { values, mergeTags } });
     navigator.clipboard.writeText(mjmlString);
     saveAs(new Blob([mjmlString], { type: 'text/mjml' }), 'easy-email.mjml');
+  };
+
+  const onSaveTemplate = (values: IEmailTemplate) => {
+    const mjmlString = JsonToMjml({
+      data: values.content,
+      mode: 'production',
+      context: values.content,
+      dataSource: mergeTags,
+    });
+
+    const html = mjml(mjmlString, {}).html;
+
+    pushEvent({ event: 'SaveTemplate', payload: { values, mergeTags } });
+
+    let container = document.createElement("div");
+    container.innerHTML = html;
+    
+  
+    //Click on preview button
+    let tabWrapper = document.querySelector(".easy-email-editor-tabWrapper ._Stack_1jdgv_1 > ._Item_1jdgv_8");
+    let currentActive = tabWrapper?.querySelector(".easy-email-editor-tabActiveItem")! as HTMLElement;
+    tabWrapper?.querySelectorAll("button")[1].click();
+    
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function screenshot() {
+      await sleep(300);
+      //@ts-ignore
+      let DOM = document.querySelector("#easy-email-editor > div").children[2].querySelector("div > div > div > div > div").shadowRoot.querySelector(".preview-container") as HTMLElement;
+
+      const originalStyle = {
+        overflow: DOM.style.overflow,
+        height: DOM.style.height,
+        scrollTop: DOM.scrollTop,
+      };
+
+      DOM.scrollTop = 0;
+      DOM.style.overflow = "visible";
+      DOM.style.height = DOM.scrollHeight + "px";
+
+      //CreateImageTemplate
+      let canvas = await html2canvas(DOM, {useCORS: true});
+
+      DOM.style.overflow = originalStyle.overflow;
+      DOM.style.height = originalStyle.height;
+      DOM.scrollTop = originalStyle.scrollTop;
+
+      const imageBase64 = canvas.toDataURL("image/png");
+
+      const timestamp = Math.floor(Date.now() / 1000);
+
+      let payload = {
+        uuid: fileUUID,
+        title: values.subject,
+        summary: values.subTitle,
+        created_at: timestamp,
+        updated_at: timestamp,
+        data: values,
+        picture: imageBase64,
+      };
+
+      currentActive.click();
+
+      let res = await fetch("http://localhost:4000/api/template", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json' // Set the Content-Type to JSON
+        },
+        body: JSON.stringify(payload)
+      });
+
+      if(res.status === 200) {
+        console.log("save success")
+      } else {
+        console.error("could not save", res);
+      }
+    }
+    screenshot();
   };
 
   const onExportHTML = (values: IEmailTemplate) => {
@@ -432,6 +512,13 @@ export default function Editor() {
                   onBack={() => history.push('/')}
                   extra={
                     <Stack alignment='center'>
+                        <Button
+                          key='Save Template'
+                          onClick={() => onSaveTemplate(values)}
+                        >
+                          <strong>Save</strong>
+                        </Button>
+
                       <Dropdown
                         droplist={
                           <Menu>

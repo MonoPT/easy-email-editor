@@ -1,11 +1,11 @@
 {
-  "uuid": "ata",
-  "title": "24 jan. 2025.mjml",
+  "uuid": "908c0ce8-75f9-4d5e-a9fe-f71b7211d64c",
+  "title": "Canalcentro.mjml",
   "summary": "",
-  "created_at": 1738150105,
-  "updated_at": 1738150105,
+  "created_at": 1738150056,
+  "updated_at": 1738150056,
   "data": {
-    "subject": "24 jan. 2025.mjml",
+    "subject": "Canalcentro.mjml",
     "subTitle": "",
     "content": {
       "type": "page",
@@ -35,7 +35,7 @@
       },
       "attributes": {
         "background-color": "#E7E7E7",
-        "width": "700px"
+        "width": "600px"
       },
       "children": [
         {
@@ -132,7 +132,7 @@
                   "type": "text",
                   "data": {
                     "value": {
-                      "content": "<div style=\"text-align: left;\"><span style=\"word-spacing: normal;\">ATA DA REUNIÃO</span></div>"
+                      "content": "<div style=\"text-align: left;\"><span style=\"word-spacing: normal;\">ATA DA REUNIÃO 2</span></div>"
                     }
                   },
                   "attributes": {
@@ -243,7 +243,7 @@
                   "type": "text",
                   "data": {
                     "value": {
-                      "content": "Na sequência da reunião realizada no dia 24 de janeiro de 2025, segue a ATA que resume todos os pontos abordados durante a reunião. Pedimos ainda que <b>respondam às questões</b>&nbsp;no ponto \"Próximos Passos - Questões\" o mais brevemente possível, de forma a iniciarmos o desenvolvimento do mockup inicial."
+                      "content": "Na sequência da reunião realizada no dia 24 de janeiro de 2025, segue a ATA que resume todos os pontos abordados durante a reunião. Pedimos ainda que <b>respondam às questões</b>&nbsp;no penúltimo ponto o mais brevemente possível, de forma a iniciarmos o desenvolvimento do mockup inicial."
                     }
                   },
                   "attributes": {
@@ -1171,123 +1171,7 @@
                   "type": "text",
                   "data": {
                     "value": {
-                      "content": "<ul class=\"tarefas\"><li><span style=\"word-spacing: normal;\">Decisão sobre a<b> Área Reservada</b> (via GoGest ou integrada na loja);</span></li><li><span style=\"word-spacing: normal;\">Envio <b>das informações básicas</b> do design e layout até 7 de fevereiro;</span></li><li><span style=\"word-spacing: normal;\">Envio de <b>informações gerais</b>:</span></li></ul><ol><li><span style=\"word-spacing: normal;\">Logótipo, ícones e imagens a manter;</span></li><li><span style=\"word-spacing: normal;\">Design e layout a seguir (cores, fontes, formas, etc.);</span></li><li>Informações/páginas a preservar do website antigo;</li><li>Páginas pretendidas (Home, Empresa, Produtos, Marcas, Documentos, Contactos, Notícias, Recrutamento, etc.) e respetivas secções/funcionalidades;</li><li>Funcionalidades desejadas (website e produtos);</li><li>Hierarquia de famílias e subcategorias;</li><li>Dados dos produtos a importar;</li><li>Campos de clientes/endereços necessários;</li><li>Websites concorrentes ou similares para inspiração;</li><li><span style=\"word-spacing: normal;\">Condições específicas de encomendas, produtos e integração.</span></li></ol><ul><li><span style=\"word-spacing: normal;\">Envio de <b>informação para o relatório</b> NERLEI:</span></li></ul><ol><li><span style=\"word-spacing: normal;\">Mercados alvo para presença inicial e futura através da nova loja.</span></li></ol><style>\n  \t.tarefas li {\n    \tmargin-bottom: 12px;\n    }\n  </style>"
-                    }
-                  },
-                  "attributes": {
-                    "align": "left",
-                    "font-weight": "400",
-                    "line-height": "1.5",
-                    "font-size": "16px",
-                    "padding": "0px 0px 0px 0px"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "section",
-          "data": {
-            "value": {
-              "noWrap": false
-            }
-          },
-          "attributes": {
-            "background-repeat": "repeat",
-            "background-size": "auto",
-            "background-position": "top center",
-            "border": "none",
-            "direction": "ltr",
-            "text-align": "center",
-            "background-color": "#fff",
-            "padding": "20px 0px 0px 0px"
-          },
-          "children": [
-            {
-              "type": "column",
-              "data": {
-                "value": {}
-              },
-              "attributes": {
-                "border": "none",
-                "vertical-align": "top",
-                "padding": "0px 0px 0px 0px"
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "data": {
-                    "value": {
-                      "content": "Outra documentação a tratar antes do projeto terminar"
-                    }
-                  },
-                  "attributes": {
-                    "align": "left",
-                    "font-weight": "600",
-                    "line-height": "1.5",
-                    "font-size": "25px",
-                    "container-background-color": "#fff",
-                    "color": "#043C7B",
-                    "padding": "0px 0px 0px 20px"
-                  },
-                  "children": []
-                },
-                {
-                  "type": "divider",
-                  "data": {
-                    "value": {}
-                  },
-                  "attributes": {
-                    "align": "center",
-                    "border-width": "1px",
-                    "border-style": "solid",
-                    "border-color": "#000",
-                    "container-background-color": "#fff",
-                    "padding": "5px 20px 20px 20px"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "section",
-          "data": {
-            "value": {
-              "noWrap": false
-            }
-          },
-          "attributes": {
-            "background-repeat": "repeat",
-            "background-size": "auto",
-            "background-position": "top center",
-            "border": "none",
-            "direction": "ltr",
-            "text-align": "center",
-            "background-color": "#fff",
-            "padding": "0px 20px 20px 20px"
-          },
-          "children": [
-            {
-              "type": "column",
-              "data": {
-                "value": {}
-              },
-              "attributes": {
-                "border": "none",
-                "vertical-align": "top",
-                "width": "100%",
-                "padding": "0px 10px 0px 0px"
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "data": {
-                    "value": {
-                      "content": "<div><span style=\"word-spacing: normal;\">Tendo em conta o tempo que o processo pode levar com terceiros, recomendamos que comecem desde já a reunir a documentação e informação necessária para os seguintes pontos:</span></div><div><ol><li><span style=\"word-spacing: normal;\">Contratos com plataformas de métodos de pagamento com integração Prestashop. Algumas opções populares incluem:\n  <ul>\n    <li>PayPal (internacional)</li>\n    <li>EuPago (MBWay, Multibanco, Cartões Visa e Mastercard, PaysafeCard, PayShop, etc.)</li>\n    <li>ifThenPay (MBWay, Multibanco, Cartões Visa e Mastercard, PayShop, GooglePay, ApplePay, etc.)</li>\n    <li>Também podem falar com o vosso banco</li></ul></span></li><li><span style=\"word-spacing: normal;\">Política de sustentabilidade</span></li><li><span style=\"word-spacing: normal;\">Políticas obrigatórias (pagamento seguro, privacidade, termos e condições, etc..) - Podem utilizar os nossos templates como ponto de partida:&nbsp;</span><a href=\"https://drive.google.com/drive/folders/1IhA70ZjGK8aKnnTNuf4Z9oeRwaBlgUOi?usp=sharing\" target=\"_blank\" style=\"color: inherit; text-decoration: underline;\" tabindex=\"-1\">https://drive.google.com/drive/folders/1IhA70ZjGK8aKnnTNuf4Z9oeRwaBlgUOi?usp=sharing</a></li><li>Canal de denúncia</li><li>Seleção dos métodos de envio e respetivos contratos com transportadoras, ex: CTT, DPD, (devem ter em atenção os países para onde pretendem enviar numa primeira fase. Também devem incluir condições de envio e preço)</li></ol></div><style>\n  \t.tarefas li {\n    \tmargin-bottom: 12px;\n    }\n  </style>"
+                      "content": "<ul class=\"tarefas\"><li><span style=\"word-spacing: normal;\">Decisão sobre a<b> Área Reservada</b> (via GoGest ou integrada na loja);</span></li><li><span style=\"word-spacing: normal;\">Envio <b>rápido das informações básicas</b> do design e layout;</span></li><li><span style=\"word-spacing: normal;\">Envio de <b>informações gerais</b>:</span></li></ul><ol><li><span style=\"word-spacing: normal;\">Logótipo, ícones e imagens a manter;</span></li><li><span style=\"word-spacing: normal;\">Design e layout a seguir (cores, fontes, formas, etc.);</span></li><li>Informações/páginas a preservar do website antigo;</li><li>Páginas pretendidas (Home, Empresa, Produtos, Marcas, Documentos, Contactos, Notícias, Recrutamento, etc.) e respetivas secções/funcionalidades;</li><li>Funcionalidades desejadas (website e produtos);</li><li>Hierarquia de famílias e subcategorias;</li><li>Dados dos produtos a importar;</li><li>Campos de clientes/endereços necessários;</li><li>Websites concorrentes ou similares para inspiração;</li><li>Preparação de Política de Privacidade, Termos e Condições, Portes e Envio, Trocas e Devoluções, Pagamento Seguro, etc.;</li><li>Plataforma de pagamentos a integrar com o PrestaShop;</li><li>Métodos de envio, respetivos preços e condições (países, preço, etc.);</li><li><span style=\"word-spacing: normal;\">Condições específicas de encomendas, produtos e integração.</span></li></ol><ul><li><span style=\"word-spacing: normal;\">Envio de <b>informação para o relatório</b> NERLEI:</span></li></ul><ol><li><span style=\"word-spacing: normal;\">Mercados alvo para presença inicial e futura através da nova loja.</span></li></ol><style>\n  \t.tarefas li {\n    \tmargin-bottom: 12px;\n    }\n  </style>"
                     }
                   },
                   "attributes": {
@@ -1527,5 +1411,5 @@
       ]
     }
   },
-  "picture": "/src/templates/pictures/ata.png"
+  "picture": "/src/templates/pictures/908c0ce8-75f9-4d5e-a9fe-f71b7211d64c.png"
 }

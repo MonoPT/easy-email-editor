@@ -1,17 +1,9 @@
 {
-  "article_id": 814,
+  "uuid": "Star_Wars",
   "title": "Star Wars",
   "summary": "Nice to meet you!",
-  "picture": "https://d3k81ch9hvuctc.cloudfront.net/company/S7EvMw/images/6a9469b5-f515-44de-b3dd-466319134a1c.png",
-  "category_id": 96,
-  "origin_source": "",
-  "readcount": 12,
-  "user_id": 107,
-  "secret": 0,
-  "level": 10,
-  "created_at": 1645698522,
-  "updated_at": 1645865738,
-  "deleted_at": 0,
+  "created_at": 1738150672,
+  "updated_at": 1738150672,
   "data": {
     "subject": "Star Wars",
     "subTitle": "Nice to meet you!",
@@ -726,16 +718,5 @@
       ]
     }
   },
-  "tags": [
-    {
-      "tag_id": 74,
-      "name": "券包",
-      "picture": "http://assets.maocanhua.cn/Fqpjw0PHvSPy4sh0giFmkpuxgKhU",
-      "desc": "券包",
-      "created_at": 1576227276,
-      "user_id": 77,
-      "updated_at": 0,
-      "deleted_at": 0
-    }
-  ]
+  "picture": "/src/templates/pictures/Star_Wars.png"
 }
