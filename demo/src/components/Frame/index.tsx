@@ -44,6 +44,7 @@ export default function Frame({
       window.removeEventListener('updateTemplateTab', handleUpdateTemplateTab);
     };
   }, []);
+
   const { featureEnabled } = useShowCommercialEditor();
 
   return (

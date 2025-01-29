@@ -12,20 +12,70 @@ import { Stack, useFocusIdx } from 'easy-email-editor';
 import { AttributesPanelWrapper } from '@extensions/AttributePanel/components/attributes/AttributesPanelWrapper';
 import { FontFamily } from '../../attributes/FontFamily';
 import { pixelAdapter } from '../../adapter';
+import { SelectField } from '../../../../components/Form';
+import { useState, useEffect } from 'react';
+import './style.css';
 
-interface PageProps { hideSubTitle?: boolean; hideSubject?: boolean}
+
+interface PageProps { hideSubTitle?: boolean; hideSubject?: boolean; }
 export function Page({ hideSubTitle, hideSubject }: PageProps) {
   const { focusIdx } = useFocusIdx();
 
   if (!focusIdx) return null;
 
+  const [folders, setFolders] = useState([]);
+  const [selectedFolder, setselectedFolder] = useState("None");
+  const [selectedFolderId, setselectedFolderId] = useState("0");
+
+
+  useEffect(async () => {
+    let f = await (await fetch("http://localhost:4000/api/folders")).json();
+
+    setFolders(f);
+
+    const selectFolder = (e) => {
+      setselectedFolder(e.detail.name);
+      setselectedFolderId(e.detail.id);
+    };
+
+    window.addEventListener("handleSelectFolder", selectFolder);
+
+    return () => {
+      window.removeEventListener("handleSelectFolder", selectFolder);
+    };
+  }, []);
+
   return (
     <AttributesPanelWrapper style={{ padding: 0 }}>
       <Stack.Item fill>
-        <Collapse defaultActiveKey={['0', '1']}>
+        <Collapse defaultActiveKey={['0', '1', '2']}>
+          <Collapse.Item
+            name='2'
+            header={t('Template Settings')}
+          >
+            <Space direction='vertical'>
+              <div style={{ position: "relative" }}>
+                {selectedFolder}
+                <input type="hidden" value={selectedFolderId}></input>
+                <div id="folderOptions">
+
+                  {folders.map((folder) => (
+                    <span key={folder.id}>
+                      <label className='folder'>{folder.folderName}</label>
+                      {
+                        folder.subfolders.map((item) => ( //Submenus
+                          <label key={item.id} className='subfolder' onClick={() => { window.dispatchEvent(new CustomEvent("handleSelectFolder", { detail: { id: item.id, name: item.name } })); }}>{item.name}</label>
+                        ))
+                      }
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Space>
+          </Collapse.Item>
           <Collapse.Item
             name='0'
-            header={t('Email Setting')}
+            header={t('Email Settings')}
           >
             <Space direction='vertical'>
               {!hideSubject && (
