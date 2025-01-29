@@ -188,6 +188,7 @@ function makeRequest(url) {
 }
 
 let fileUUID = "";
+let createdTime = 0;
 
 export default function Editor() {
   const { featureEnabled } = useShowCommercialEditor();
@@ -207,6 +208,7 @@ export default function Editor() {
       if (tp.data) {
         templateData = tp.data;
         fileUUID = templatePath?.replace(".json", "") || "";
+        createdTime = tp.created_at;
       }
     }
   }
@@ -382,11 +384,15 @@ export default function Editor() {
 
       const timestamp = Math.floor(Date.now() / 1000);
 
+      if (createdTime < 1) {
+        createdTime = timestamp;
+      }
+
       let payload = {
         uuid: fileUUID,
         title: values.subject,
         summary: values.subTitle,
-        created_at: timestamp,
+        created_at: createdTime,
         updated_at: timestamp,
         data: values,
         picture: imageBase64,
