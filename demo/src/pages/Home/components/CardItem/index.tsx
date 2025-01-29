@@ -26,37 +26,55 @@ export function CardItem(props: CardItemProps) {
     getLoadingByKey(template.loadings.removeById, data.article_id),
   ]);
 
-  const onDelete = useCallback(() => {
-    dispatch(
-      template.actions.removeById({
-        id: data.article_id,
-        _actionKey: data.article_id,
-        success() {
-          dispatch(templateList.actions.fetch(undefined));
-        },
-      })
-    );
+  const onDelete = useCallback(async () => {
+    let uuid = data.path.replace(".json", "");
+
+    let res = await fetch("http://localhost:4000/api/template/", {
+      method: "DELETE",
+      headers: {
+        'Content-Type': 'application/json' // Set the Content-Type to JSON
+      },
+      body: JSON.stringify({uuid})
+    });
+
+    if (res.status !== 200) {
+      alert("Could not delete template");
+    }
+
+    history.push(`/`);
+    //window.location.reload();
+
   }, [data, dispatch]);
 
   const onDuplicate: React.MouseEventHandler<HTMLAnchorElement> = useCallback(
-    (ev) => {
+    async (ev) => {
       ev.preventDefault();
-      dispatch(
-        template.actions.duplicate({
-          article: data,
-          _actionKey: data.article_id,
-          success(id) {
-            history.push(`/editor?id=${id}`);
-          },
-        })
-      );
+
+      let uuid = data.path.replace(".json", "");
+
+      let res = await fetch("http://localhost:4000/api/template/duplicate", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json' // Set the Content-Type to JSON
+        },
+        body: JSON.stringify({uuid})
+      });
+
+      if (res.status === 200) {
+        let data = await res.json();
+
+        let uuid = data.uuid;
+        history.push(`/editor?path=${uuid}.json`);
+      }
+
+      
     },
     [data, dispatch, history]
   );
 
   return (
     <div
-      key={data.article_id}
+      key={data.path}
       className={styles.templeteItem}
       style={{ backgroundImage: `url(${data.picture})` }}
     >

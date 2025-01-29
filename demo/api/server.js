@@ -61,6 +61,67 @@ app.post("/api/template", (req, res) => {
   res.json({ received: requestBody });
 })
 
+app.post("/api/template/duplicate", (req, res) => {
+  const requestBody = req.body;
+  let uuid = uuidv4();
+
+  let email_to_clone = requestBody.uuid;
+
+  const timestamp = Math.floor(Date.now() / 1000);
+
+  loadJsonFile( `${path}/${email_to_clone}.json`, (err, data) => {
+    if (err) {
+      console.log(err);
+      return res.status(400).json({
+        error: "file with uuid " + email_to_clone + " does not exist"
+      })
+    }
+
+    fs.copyFile(`${path}/pictures/${email_to_clone}.png`, `${path}/pictures/${uuid}.png`, (err) => {
+      if (err) {
+        console.error('Error:', err);
+      } else {
+        console.log('Image cloned successfully!');
+      }
+    });
+
+    data.created_at = timestamp;
+    data.updated_at = timestamp;
+    data.uuid = uuid
+    data.picture = `/src/templates/pictures/${uuid}.png`
+
+    saveJsonToFile(data, `${path}/${uuid}.json`)
+
+    return res.status(200).json({
+      uuid
+    })
+  })
+})
+
+app.delete("/api/template/", (req, res) => {
+  const requestBody = req.body;
+
+  let uuid = requestBody.uuid;
+
+  fs.unlink(`${path}/${uuid}.json`, (err) => {
+    if (err) {
+      console.error('Error deleting file:', err);
+    } else {
+      console.log('File deleted successfully!');
+    }
+  });
+
+  fs.unlink(`${path}/pictures/${uuid}.png`, (err) => {
+    if (err) {
+      console.error('Error deleting file:', err);
+    } else {
+      console.log('File deleted successfully!');
+    }
+  });
+
+  return res.status(200).json("ok");
+})
+
 app.listen(4000, () => console.log('Backend running on port 4000'));
 
 function saveBase64Image(base64String, filePath) {
@@ -91,5 +152,20 @@ function saveJsonToFile(data, filePath) {
       } else {
           console.log('JSON saved successfully!');
       }
+  });
+}
+
+function loadJsonFile(filePath, callback) {
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      callback(err, null);  // Return error if there was one
+    } else {
+      try {
+        const jsonData = JSON.parse(data);  // Parse the JSON data
+        callback(null, jsonData);  // Return the parsed data
+      } catch (parseError) {
+        callback(parseError, null);  // Return parse error if there's an issue with JSON format
+      }
+    }
   });
 }

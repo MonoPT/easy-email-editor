@@ -1,9 +1,9 @@
 {
-  "uuid": "Star_Wars",
+  "uuid": "3b7431c8-3c4b-4617-bb30-59d9c9ac8f8b",
   "title": "Star Wars",
   "summary": "Nice to meet you!",
-  "created_at": 1738150672,
-  "updated_at": 1738150672,
+  "created_at": 1738153922,
+  "updated_at": 1738153925,
   "data": {
     "subject": "Star Wars",
     "subTitle": "Nice to meet you!",
@@ -718,5 +718,5 @@
       ]
     }
   },
-  "picture": "/src/templates/pictures/Star_Wars.png"
+  "picture": "/src/templates/pictures/3b7431c8-3c4b-4617-bb30-59d9c9ac8f8b.png"
 }
