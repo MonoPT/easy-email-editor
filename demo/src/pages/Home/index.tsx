@@ -36,8 +36,6 @@ export default function Home() {
     dispatch(templateList.actions.fetch(undefined));
 
     const handleUpdateTemplateTab = (e) => {
-      // Supondo que e.detail tenha a nova categoria
-      console.log(e.detail);
       setCategoria(e.detail);
     };
 
@@ -49,14 +47,17 @@ export default function Home() {
   }, [dispatch]);
 
 
+
+
   return (
     <Frame
       title='Templates'
       primaryAction={
         <Button
           onClick={() => {
+            console.log(categoria);
             pushEvent({ event: 'Create' });
-            history.push('/editor');
+            history.push('/editor?folder=' + categoria);
           }}
         >
           Add

@@ -45,6 +45,12 @@ app.get('/api/templates', (req, res) => {
   res.json(templates);
 });
 
+app.get('/api/folders', (req, res) => {
+  let data = fs.readFileSync(`${__dirname}/folders.json`, { encoding: 'utf-8' });
+
+  res.json(JSON.parse(data));
+});
+
 app.post("/api/template", (req, res) => {
   let uuid = uuidv4();
 

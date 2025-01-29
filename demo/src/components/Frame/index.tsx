@@ -5,7 +5,10 @@ import { pushEvent } from '@demo/utils/pushEvent';
 import { githubButtonGenerate } from '@demo/utils/githubButtonGenerate';
 import { useShowCommercialEditor } from '@demo/hooks/useShowCommercialEditor';
 import { Button } from '@arco-design/web-react';
+import { useState } from 'react';
+
 import './style.css';
+
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -23,10 +26,26 @@ export default function Frame({
   primaryAction,
   breadcrumb,
 }: FrameProps) {
-  useEffect(() => {
-    githubButtonGenerate();
+
+  let folderSelected = "0";
+
+  const [folders, setFolders] = useState([]);
+
+  useEffect(async () => {
+    const handleUpdateTemplateTab = (e) => {
+      folderSelected = e.detail;
+    };
+
+    setFolders(await (await fetch("http://localhost:4000/api/folders")).json());
+
+    window.addEventListener('updateTemplateTab', handleUpdateTemplateTab);
+
+    return () => {
+      window.removeEventListener('updateTemplateTab', handleUpdateTemplateTab);
+    };
   }, []);
   const { featureEnabled } = useShowCommercialEditor();
+
   return (
     <Layout>
       <Header style={{ padding: '0 20px', backgroundColor: '#001529' }}>
@@ -62,27 +81,29 @@ export default function Frame({
 
             <Menu.Item key='0' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", { detail: "0" }))}>All Templates</Menu.Item>
 
-            <SubMenu
-              key='sub1'
-              title='Templates'
-            >
-              <Menu.Item key='1' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", { detail: "1" }))}>Folder 1</Menu.Item>
-              <Menu.Item key='2' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", { detail: "2" }))}>Folder 2</Menu.Item>
-              <Menu.Item key='3' onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", { detail: "3" }))}>Folder 3</Menu.Item>
-
-              <Button
-                className={"CreateSubFolderButton"}
-                onClick={() => {
-                  //pushEvent({ event: 'Create' });
-                  //history.push('/editor');
-                  alert("Create sub Folder");
-                }}
+            {[...folders].map((item) => ( // Folders
+              <SubMenu
+                key={item.id}
+                title={item.folderName}
               >
-                Create new subfolder
-              </Button>
-            </SubMenu>
 
+                {item.subfolders.map((item) => ( //Submenus
+                  <Menu.Item key={item.id} onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", { detail: item.id }))}>{item.name}</Menu.Item>
+                ))}
 
+                <Button
+                  className={"CreateSubFolderButton"}
+                  onClick={() => {
+                    //pushEvent({ event: 'Create' });
+                    //history.push('/editor');
+                    alert("Create sub Folder");
+                  }}
+                >
+                  Create new subfolder
+                </Button>
+              </SubMenu>
+
+            ))}
 
           </Menu>
         </Sider>

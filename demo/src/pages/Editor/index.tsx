@@ -199,7 +199,7 @@ export default function Editor() {
   const tpd = useAppSelector('template');
 
   let templateData = tpd;
-  let templateFolder = 1;
+  let templateFolder = "0";
 
   if (tpd) {
     let templatePath = new URLSearchParams(window.location.search).get('path')?.replaceAll("%20", "_").replaceAll(" ", "_").replaceAll("'", "");
@@ -215,6 +215,12 @@ export default function Editor() {
         createdTime = tp.created_at;
       }
     }
+  }
+
+  let f = new URLSearchParams(window.location.search).get('folder');
+
+  if (f) {
+    templateFolder = f;
   }
 
   const { id, userId } = useQuery();

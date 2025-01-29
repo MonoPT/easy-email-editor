@@ -1,9 +1,10 @@
 [
   {
     "folderName": "Templates",
+    "id": "asdasdasdad",
     "subfolders": [
       {
-        "name": "Folder 1",
+        "name": "MJML website",
         "id": "1"
       },
       {
@@ -18,6 +19,7 @@
   },
   {
     "folderName": "Timeout & Relax",
+    "id": "asdasdasdadad",
     "subfolders": [
       {
         "name": "Folder 1",
