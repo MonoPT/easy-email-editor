@@ -62,6 +62,8 @@ import { json } from 'stream/consumers';
 
 import html2canvas from "html2canvas";
 
+import mobileOnlyCss from "./stylesInjector/mobileOnly.css";
+
 const defaultCategories: ExtensionProps['categories'] = [
   {
     label: 'Content',
@@ -223,6 +225,8 @@ export default function Editor() {
     templateFolder = f;
   }
 
+  window.currentFolderId = templateFolder;
+
   const { id, userId } = useQuery();
   const loading = useLoading(template.loadings.fetchById);
   const { mergeTags, setMergeTags } = useMergeTagsModal(testMergeTags);
@@ -240,8 +244,16 @@ export default function Editor() {
       dispatch(template.actions.fetchDefaultTemplate(undefined));
     }
 
+    const updateFolder = (e) => {
+      templateFolder = e.detail;
+      window.currentFolderId = e.detail;
+    };
+
+    window.addEventListener("updateFolder", updateFolder);
+
     return () => {
       dispatch(template.actions.set(null));
+      window.removeEventListener("updateFolder", updateFolder);
     };
   }, [dispatch, id, userId]);
 
@@ -404,7 +416,7 @@ export default function Editor() {
         summary: values.subTitle,
         created_at: createdTime,
         updated_at: timestamp,
-        folder: templateFolder, //See best way to create new folders
+        folder: window.currentFolderId, //See best way to create new folders
         data: values,
         picture: imageBase64,
       };
@@ -436,7 +448,7 @@ export default function Editor() {
       dataSource: mergeTags,
     });
 
-    const html = mjml(mjmlString, {}).html;
+    const html = mjml(mjmlString, {}).html.replace("</head>", `<style>${mobileOnlyCss}</style></head>`);
 
     pushEvent({ event: 'HTMLExport', payload: { values, mergeTags } });
     navigator.clipboard.writeText(html);
@@ -451,7 +463,7 @@ export default function Editor() {
       dataSource: mergeTags,
     });
 
-    const html = mjml(mjmlString, {}).html;
+    const html = mjml(mjmlString, {}).html.replace("</head>", `<style>${mobileOnlyCss}</style></head>`);
 
     pushEvent({ event: 'HTMLExport', payload: { values, mergeTags } });
     navigator.clipboard.writeText(html);

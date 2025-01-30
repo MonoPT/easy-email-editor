@@ -1,0 +1,1878 @@
+{
+  "uuid": "6055f7f4-ad7e-4e54-adc3-65fdc5718067",
+  "title": "Save the date Coffe & Tech",
+  "summary": "",
+  "created_at": 1738236499,
+  "updated_at": 1738256573,
+  "folder": "3",
+  "data": {
+    "subject": "Save the date Coffe & Tech",
+    "subTitle": "",
+    "content": {
+      "type": "page",
+      "data": {
+        "value": {
+          "breakpoint": "480px",
+          "headAttributes": "",
+          "font-size": "14px",
+          "font-weight": "400",
+          "line-height": "1.7",
+          "headStyles": [],
+          "fonts": [
+            {
+              "name": "inter",
+              "href": "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            }
+          ],
+          "responsive": true,
+          "font-family": "inter,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif",
+          "text-color": "#000000"
+        }
+      },
+      "attributes": {
+        "width": "600px",
+        "background-color": "#fff"
+      },
+      "children": [
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "desktop-only"
+          },
+          "children": [
+            {
+              "type": "group",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "vertical-align": "middle",
+                "direction": "ltr"
+              },
+              "children": [
+                {
+                  "type": "advanced_column",
+                  "attributes": {
+                    "width": "50%",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  },
+                  "data": {
+                    "value": {}
+                  },
+                  "children": [
+                    {
+                      "type": "advanced_image",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "align": "left",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px",
+                        "src": "https://img.mailinblue.com/6095823/images/content_library/original/679b62d282383ecb90f76d35.png",
+                        "width": "200px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "advanced_column",
+                  "attributes": {
+                    "width": "50%",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  },
+                  "data": {
+                    "value": {}
+                  },
+                  "children": [
+                    {
+                      "type": "advanced_image",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "align": "right",
+                        "padding": "0px 0px 0px 0px",
+                        "src": "https://img.mailinblue.com/6095823/images/content_library/original/679b62d2c9d4d573b99c9465.png",
+                        "width": "70%"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "mobile-only"
+          },
+          "children": [
+            {
+              "type": "group",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "vertical-align": "middle",
+                "direction": "ltr"
+              },
+              "children": [
+                {
+                  "type": "advanced_column",
+                  "attributes": {
+                    "width": "50%",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  },
+                  "data": {
+                    "value": {}
+                  },
+                  "children": [
+                    {
+                      "type": "advanced_image",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "align": "left",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px",
+                        "src": "https://img.mailinblue.com/6095823/images/content_library/original/679b62d282383ecb90f76d35.png",
+                        "width": "200px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "advanced_column",
+                  "attributes": {
+                    "width": "50%",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  },
+                  "data": {
+                    "value": {}
+                  },
+                  "children": [
+                    {
+                      "type": "advanced_image",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "align": "right",
+                        "padding": "0px 0px 0px 0px",
+                        "src": "https://img.mailinblue.com/6095823/images/content_library/original/679b62d2c9d4d573b99c9465.png",
+                        "width": "50%"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "desktop-only"
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "60%",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "middle"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_text",
+                  "data": {
+                    "value": {
+                      "content": "Ameaças digitais? Descubra como estar um passo à frente"
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 20px 0px",
+                    "align": "left",
+                    "font-size": "22px",
+                    "line-height": "1.4",
+                    "font-weight": "700"
+                  },
+                  "children": []
+                },
+                {
+                  "type": "advanced_text",
+                  "data": {
+                    "value": {
+                      "content": "A hes convida-o para o próximo Coffee &amp; Tech, focado em ameaças cibernéticas e segurança digital!"
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "align": "left",
+                    "font-size": "16px",
+                    "line-height": "1.4"
+                  },
+                  "children": []
+                },
+                {
+                  "type": "advanced_button",
+                  "data": {
+                    "value": {
+                      "content": "Inscreva-se Grátis!"
+                    }
+                  },
+                  "attributes": {
+                    "align": "left",
+                    "background-color": "#000000",
+                    "color": "#ffffff",
+                    "font-weight": "normal",
+                    "border-radius": "3px",
+                    "padding": "35px 0px 0px 0px",
+                    "inner-padding": "15px 25px 15px 25px",
+                    "line-height": "120%",
+                    "target": "_blank",
+                    "vertical-align": "middle",
+                    "border": "none",
+                    "text-align": "center",
+                    "href": "#"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "40%",
+                "padding": "0px   ",
+                "vertical-align": "middle"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_image",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "align": "center",
+                    "height": "auto",
+                    "padding": "0px 0px 0px 15px",
+                    "src": "https://img.freepik.com/free-photo/close-up-shot-serviceman-dealing-with-data-center-system-failures-using-laptop-order-servers-with-high-availability-features-minimize-downtime-prevent-crashes_482257-72789.jpg?t=st=1738237272~exp=1738240872~hmac=b4d7fc03c51bf6a97790b1ea8f7ebc16b3eea62d2cdb886ee73eb125fb1d3438&w=360"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 0px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "mobile-only"
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "100%",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "middle"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_text",
+                  "data": {
+                    "value": {
+                      "content": "Ameaças digitais? Descubra como estar um passo à frente"
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 10px 0px",
+                    "align": "center",
+                    "line-height": "1.4",
+                    "font-weight": "700",
+                    "font-size": "22px"
+                  },
+                  "children": []
+                },
+                {
+                  "type": "advanced_text",
+                  "data": {
+                    "value": {
+                      "content": "A hes convida-o para o próximo Coffee &amp; Tech, focado em ameaças cibernéticas e segurança digital!"
+                    }
+                  },
+                  "attributes": {
+                    "padding": "10px 0px 10px 0px",
+                    "align": "center",
+                    "font-size": "14px",
+                    "line-height": "1.4"
+                  },
+                  "children": []
+                },
+                {
+                  "type": "advanced_button",
+                  "data": {
+                    "value": {
+                      "content": "Inscreva-se Grátis!"
+                    }
+                  },
+                  "attributes": {
+                    "align": "center",
+                    "background-color": "#000000",
+                    "color": "#ffffff",
+                    "font-weight": "normal",
+                    "border-radius": "3px",
+                    "padding": "16px 0px 0px 0px",
+                    "inner-padding": "12px 25px 12px 25px",
+                    "line-height": "120%",
+                    "target": "_blank",
+                    "vertical-align": "middle",
+                    "border": "none",
+                    "text-align": "center",
+                    "href": "#",
+                    "font-size": "12px"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "30px 0px 0px 0px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "mobile-only"
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "100%",
+                "padding": "0px   ",
+                "vertical-align": "middle"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_image",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "align": "center",
+                    "height": "auto",
+                    "padding": "0px 0px 0px 0px",
+                    "src": "https://img.freepik.com/free-photo/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_181624-57587.jpg?t=st=1738249516~exp=1738253116~hmac=e4ba20fc12b2e9696b021bf4e3db557bba3c34e8de474a67f5b13ce0a1d5d1ae&w=1060"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": ""
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "100%",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "middle"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_text",
+                  "data": {
+                    "value": {
+                      "content": "Sobre o que vamos falar?"
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 10px 0px",
+                    "align": "center",
+                    "font-size": "22px",
+                    "line-height": "1.4",
+                    "font-weight": "700"
+                  },
+                  "children": []
+                },
+                {
+                  "type": "advanced_text",
+                  "data": {
+                    "value": {
+                      "content": "Esta edição irá focar-se nas ameaças digitais às quais a sua empresa estará expostas. Quais são estas ameaças, principais pontos de falhas e como o Threatdown pode proteger a sua organização."
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "align": "center",
+                    "font-size": "14px",
+                    "line-height": "1.4"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "desktop-only"
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "100%",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "middle"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_section",
+                  "data": {
+                    "value": {
+                      "noWrap": true
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "background-repeat": "repeat",
+                    "background-size": "auto",
+                    "background-position": "top center",
+                    "border": "none",
+                    "direction": "ltr",
+                    "text-align": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "group",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "vertical-align": "top",
+                        "direction": "ltr"
+                      },
+                      "children": [
+                        {
+                          "type": "advanced_column",
+                          "attributes": {
+                            "width": "15%",
+                            "padding": "0px 0px 0px 0px",
+                            "vertical-align": "middle"
+                          },
+                          "data": {
+                            "value": {}
+                          },
+                          "children": [
+                            {
+                              "type": "advanced_image",
+                              "data": {
+                                "value": {}
+                              },
+                              "attributes": {
+                                "align": "center",
+                                "height": "auto",
+                                "padding": "0px 0px 0px 0px",
+                                "src": "https://img.mailinblue.com/6095823/images/content_library/original/679b9d0fea73ecf5190b0327.png",
+                                "width": "100%"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "advanced_column",
+                          "attributes": {
+                            "width": "55%",
+                            "padding": "0px 0px 0px 15px",
+                            "vertical-align": "middle"
+                          },
+                          "data": {
+                            "value": {}
+                          },
+                          "children": [
+                            {
+                              "type": "advanced_text",
+                              "data": {
+                                "value": {
+                                  "content": "Nome do orador"
+                                }
+                              },
+                              "attributes": {
+                                "padding": "0px 0px 10px 0px",
+                                "align": "left",
+                                "font-size": "18px",
+                                "font-weight": "600",
+                                "line-height": "1"
+                              },
+                              "children": []
+                            },
+                            {
+                              "type": "advanced_text",
+                              "data": {
+                                "value": {
+                                  "content": "CEO na Minitel"
+                                }
+                              },
+                              "attributes": {
+                                "padding": "0px 0px 6px 0px",
+                                "align": "left",
+                                "font-size": "12px",
+                                "font-weight": "500",
+                                "line-height": "1"
+                              },
+                              "children": []
+                            },
+                            {
+                              "type": "advanced_text",
+                              "data": {
+                                "value": {
+                                  "content": "Orador Convidado"
+                                }
+                              },
+                              "attributes": {
+                                "padding": "0px 0px 0px 0px",
+                                "align": "left",
+                                "font-size": "12px",
+                                "font-weight": "300",
+                                "line-height": "1",
+                                "color": "#6b6b6b"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "advanced_column",
+                          "attributes": {
+                            "width": "30%",
+                            "padding": "0px 0px 0px 0px",
+                            "vertical-align": "middle"
+                          },
+                          "data": {
+                            "value": {}
+                          },
+                          "children": [
+                            {
+                              "type": "advanced_social",
+                              "data": {
+                                "value": {
+                                  "elements": [
+                                    {
+                                      "href": "#",
+                                      "target": "_blank",
+                                      "src": "https://img.mailinblue.com/6095823/images/content_library/original/679ba0a5ea73ecf5190b04fe.png",
+                                      "content": ""
+                                    },
+                                    {
+                                      "href": "#",
+                                      "target": "_blank",
+                                      "src": "https://img.mailinblue.com/6095823/images/content_library/original/679ba0a556d365450a5bd253.png",
+                                      "content": ""
+                                    },
+                                    {
+                                      "href": "",
+                                      "target": "_blank",
+                                      "src": "https://img.mailinblue.com/6095823/images/content_library/original/679ba0a556d365450a5bd252.png",
+                                      "content": ""
+                                    }
+                                  ]
+                                }
+                              },
+                              "attributes": {
+                                "align": "right",
+                                "color": "#333333",
+                                "mode": "horizontal",
+                                "font-size": "13px",
+                                "font-weight": "normal",
+                                "border-radius": "3px",
+                                "padding": "0px 0px 0px 0px",
+                                "inner-padding": "4px 4px 4px 4px",
+                                "line-height": "22px",
+                                "text-padding": "4px 4px 4px 0px",
+                                "icon-padding": "0px",
+                                "icon-size": "30px"
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "mobile-only"
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "100%",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "middle"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_section",
+                  "data": {
+                    "value": {
+                      "noWrap": false
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "background-repeat": "repeat",
+                    "background-size": "auto",
+                    "background-position": "top center",
+                    "border": "none",
+                    "direction": "ltr",
+                    "text-align": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "advanced_column",
+                      "attributes": {
+                        "width": "100%",
+                        "padding": "0px 0px 0px 0px",
+                        "vertical-align": "middle"
+                      },
+                      "data": {
+                        "value": {}
+                      },
+                      "children": [
+                        {
+                          "type": "advanced_image",
+                          "data": {
+                            "value": {}
+                          },
+                          "attributes": {
+                            "align": "center",
+                            "height": "auto",
+                            "padding": "0px 0px 10px 0px",
+                            "src": "https://img.mailinblue.com/6095823/images/content_library/original/679b9d0fea73ecf5190b0327.png",
+                            "width": "100%"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "advanced_column",
+                      "attributes": {
+                        "width": "100%",
+                        "padding": "0px 0px 0px 0px",
+                        "vertical-align": "middle"
+                      },
+                      "data": {
+                        "value": {}
+                      },
+                      "children": [
+                        {
+                          "type": "advanced_text",
+                          "data": {
+                            "value": {
+                              "content": "Nome do orador"
+                            }
+                          },
+                          "attributes": {
+                            "padding": "0px 0px 10px 0px",
+                            "align": "center",
+                            "font-size": "18px",
+                            "font-weight": "600",
+                            "line-height": "1"
+                          },
+                          "children": []
+                        },
+                        {
+                          "type": "advanced_text",
+                          "data": {
+                            "value": {
+                              "content": "CEO na Minitel"
+                            }
+                          },
+                          "attributes": {
+                            "padding": "0px 0px 6px 0px",
+                            "align": "center",
+                            "font-size": "12px",
+                            "font-weight": "500",
+                            "line-height": "1"
+                          },
+                          "children": []
+                        },
+                        {
+                          "type": "advanced_text",
+                          "data": {
+                            "value": {
+                              "content": "Orador Convidado"
+                            }
+                          },
+                          "attributes": {
+                            "padding": "0px 0px 0px 0px",
+                            "align": "center",
+                            "font-size": "12px",
+                            "font-weight": "300",
+                            "line-height": "1",
+                            "color": "#6b6b6b"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "advanced_column",
+                      "attributes": {
+                        "width": "100%",
+                        "padding": "0px 0px 0px 0px",
+                        "vertical-align": "middle"
+                      },
+                      "data": {
+                        "value": {}
+                      },
+                      "children": [
+                        {
+                          "type": "advanced_social",
+                          "data": {
+                            "value": {
+                              "elements": [
+                                {
+                                  "href": "#",
+                                  "target": "_blank",
+                                  "src": "https://img.mailinblue.com/6095823/images/content_library/original/679ba0a5ea73ecf5190b04fe.png",
+                                  "content": ""
+                                },
+                                {
+                                  "href": "#",
+                                  "target": "_blank",
+                                  "src": "https://img.mailinblue.com/6095823/images/content_library/original/679ba0a556d365450a5bd253.png",
+                                  "content": ""
+                                },
+                                {
+                                  "href": "",
+                                  "target": "_blank",
+                                  "src": "https://img.mailinblue.com/6095823/images/content_library/original/679ba0a556d365450a5bd252.png",
+                                  "content": ""
+                                }
+                              ]
+                            }
+                          },
+                          "attributes": {
+                            "align": "center",
+                            "color": "#333333",
+                            "mode": "horizontal",
+                            "font-size": "13px",
+                            "font-weight": "normal",
+                            "border-radius": "3px",
+                            "padding": "15px 0px 0px 0px",
+                            "inner-padding": "4px 4px 4px 4px",
+                            "line-height": "22px",
+                            "text-padding": "4px 4px 4px 0px",
+                            "icon-padding": "0px",
+                            "icon-size": "30px"
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_divider",
+          "data": {
+            "value": {}
+          },
+          "attributes": {
+            "align": "center",
+            "border-width": "1px",
+            "border-style": "solid",
+            "border-color": "#C9CCCF",
+            "padding": "10px 20px 10px 20px",
+            "container-background-color": "#fff"
+          },
+          "children": []
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "desktop-only"
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "100%",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "middle"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_section",
+                  "data": {
+                    "value": {
+                      "noWrap": true
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "background-repeat": "repeat",
+                    "background-size": "auto",
+                    "background-position": "top center",
+                    "border": "none",
+                    "direction": "ltr",
+                    "text-align": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "group",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "vertical-align": "top",
+                        "direction": "ltr"
+                      },
+                      "children": [
+                        {
+                          "type": "advanced_column",
+                          "attributes": {
+                            "width": "10%",
+                            "padding": "0px 0px 0px 0px",
+                            "vertical-align": "middle"
+                          },
+                          "data": {
+                            "value": {}
+                          },
+                          "children": [
+                            {
+                              "type": "advanced_image",
+                              "data": {
+                                "value": {}
+                              },
+                              "attributes": {
+                                "align": "left",
+                                "height": "auto",
+                                "padding": "0px 0px 0px 0px",
+                                "src": "https://img.mailinblue.com/6095823/images/content_library/original/679ba841ea73ecf5190b087c.png",
+                                "width": "100%"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "advanced_column",
+                          "attributes": {
+                            "width": "45%",
+                            "padding": "0px 0px 0px 15px",
+                            "vertical-align": "middle"
+                          },
+                          "data": {
+                            "value": {}
+                          },
+                          "children": [
+                            {
+                              "type": "advanced_text",
+                              "data": {
+                                "value": {
+                                  "content": "Data"
+                                }
+                              },
+                              "attributes": {
+                                "padding": "0px 0px 10px 0px",
+                                "align": "left",
+                                "font-size": "18px",
+                                "font-weight": "600",
+                                "line-height": "1"
+                              },
+                              "children": []
+                            },
+                            {
+                              "type": "advanced_text",
+                              "data": {
+                                "value": {
+                                  "content": "5 de março 2025"
+                                }
+                              },
+                              "attributes": {
+                                "padding": "0px 0px 6px 0px",
+                                "align": "left",
+                                "font-size": "12px",
+                                "font-weight": "500",
+                                "line-height": "1"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "advanced_column",
+                          "attributes": {
+                            "width": "45%",
+                            "padding": "0px 0px 0px 0px",
+                            "vertical-align": "middle"
+                          },
+                          "data": {
+                            "value": {}
+                          },
+                          "children": [
+                            {
+                              "type": "advanced_button",
+                              "data": {
+                                "value": {
+                                  "content": "Adicionar ao calendário"
+                                }
+                              },
+                              "attributes": {
+                                "align": "right",
+                                "background-color": "transparent",
+                                "color": "#000000",
+                                "font-weight": "600",
+                                "border-radius": "3px",
+                                "padding": "10px 0px 10px 0px",
+                                "inner-padding": "10px 25px 10px 25px",
+                                "line-height": "120%",
+                                "target": "_blank",
+                                "vertical-align": "middle",
+                                "border": "2px solid black",
+                                "text-align": "center",
+                                "href": "https://hes.pt",
+                                "font-size": "12px"
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "mobile-only"
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "100%",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "middle"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_section",
+                  "data": {
+                    "value": {
+                      "noWrap": false
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "background-repeat": "repeat",
+                    "background-size": "auto",
+                    "background-position": "top center",
+                    "border": "none",
+                    "direction": "ltr",
+                    "text-align": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "advanced_column",
+                      "attributes": {
+                        "width": "100%",
+                        "padding": "0px 0px 0px 0px",
+                        "vertical-align": "middle"
+                      },
+                      "data": {
+                        "value": {}
+                      },
+                      "children": [
+                        {
+                          "type": "advanced_image",
+                          "data": {
+                            "value": {}
+                          },
+                          "attributes": {
+                            "align": "center",
+                            "height": "auto",
+                            "padding": "0px 0px 10px 0px",
+                            "src": "https://img.mailinblue.com/6095823/images/content_library/original/679ba841ea73ecf5190b087c.png",
+                            "width": "60%"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "advanced_column",
+                      "attributes": {
+                        "width": "100%",
+                        "padding": "0px 0px 0px 0px",
+                        "vertical-align": "middle"
+                      },
+                      "data": {
+                        "value": {}
+                      },
+                      "children": [
+                        {
+                          "type": "advanced_text",
+                          "data": {
+                            "value": {
+                              "content": "Data"
+                            }
+                          },
+                          "attributes": {
+                            "padding": "0px 0px 10px 0px",
+                            "align": "center",
+                            "font-size": "18px",
+                            "font-weight": "600",
+                            "line-height": "1"
+                          },
+                          "children": []
+                        },
+                        {
+                          "type": "advanced_text",
+                          "data": {
+                            "value": {
+                              "content": "5 de março 2025"
+                            }
+                          },
+                          "attributes": {
+                            "padding": "0px 0px 6px 0px",
+                            "align": "center",
+                            "font-size": "12px",
+                            "font-weight": "500",
+                            "line-height": "1"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "advanced_column",
+                      "attributes": {
+                        "width": "100%",
+                        "padding": "0px 0px 0px 0px",
+                        "vertical-align": "middle"
+                      },
+                      "data": {
+                        "value": {}
+                      },
+                      "children": [
+                        {
+                          "type": "advanced_button",
+                          "data": {
+                            "value": {
+                              "content": "Adicionar ao calendário"
+                            }
+                          },
+                          "attributes": {
+                            "align": "center",
+                            "background-color": "transparent",
+                            "color": "#000000",
+                            "font-weight": "600",
+                            "border-radius": "3px",
+                            "padding": "10px 0px 10px 0px",
+                            "inner-padding": "10px 25px 10px 25px",
+                            "line-height": "120%",
+                            "target": "_blank",
+                            "vertical-align": "middle",
+                            "border": "2px solid black",
+                            "text-align": "center",
+                            "href": "https://hes.pt",
+                            "font-size": "12px"
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_divider",
+          "data": {
+            "value": {}
+          },
+          "attributes": {
+            "align": "center",
+            "border-width": "1px",
+            "border-style": "solid",
+            "border-color": "#C9CCCF",
+            "padding": "10px 20px 10px 20px",
+            "container-background-color": "#fff"
+          },
+          "children": []
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "desktop-only"
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "100%",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "middle"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_section",
+                  "data": {
+                    "value": {
+                      "noWrap": true
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "background-repeat": "repeat",
+                    "background-size": "auto",
+                    "background-position": "top center",
+                    "border": "none",
+                    "direction": "ltr",
+                    "text-align": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "group",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "vertical-align": "top",
+                        "direction": "ltr"
+                      },
+                      "children": [
+                        {
+                          "type": "advanced_column",
+                          "attributes": {
+                            "width": "10%",
+                            "padding": "0px 0px 0px 0px",
+                            "vertical-align": "middle"
+                          },
+                          "data": {
+                            "value": {}
+                          },
+                          "children": [
+                            {
+                              "type": "advanced_image",
+                              "data": {
+                                "value": {}
+                              },
+                              "attributes": {
+                                "align": "left",
+                                "height": "auto",
+                                "padding": "0px 0px 0px 0px",
+                                "src": "https://img.mailinblue.com/6095823/images/content_library/original/679ba9aa7fbad20671728365.png",
+                                "width": "100%"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "advanced_column",
+                          "attributes": {
+                            "width": "45%",
+                            "padding": "0px 0px 0px 15px",
+                            "vertical-align": "middle"
+                          },
+                          "data": {
+                            "value": {}
+                          },
+                          "children": [
+                            {
+                              "type": "advanced_text",
+                              "data": {
+                                "value": {
+                                  "content": "Local do evento"
+                                }
+                              },
+                              "attributes": {
+                                "padding": "0px 0px 10px 0px",
+                                "align": "left",
+                                "font-size": "18px",
+                                "font-weight": "600",
+                                "line-height": "1"
+                              },
+                              "children": []
+                            },
+                            {
+                              "type": "advanced_text",
+                              "data": {
+                                "value": {
+                                  "content": "Instalações hes"
+                                }
+                              },
+                              "attributes": {
+                                "padding": "0px 0px 6px 0px",
+                                "align": "left",
+                                "font-size": "12px",
+                                "font-weight": "500",
+                                "line-height": "1"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "advanced_column",
+                          "attributes": {
+                            "width": "45%",
+                            "padding": "0px 0px 0px 0px",
+                            "vertical-align": "middle"
+                          },
+                          "data": {
+                            "value": {}
+                          },
+                          "children": [
+                            {
+                              "type": "advanced_button",
+                              "data": {
+                                "value": {
+                                  "content": "Ver no mapa"
+                                }
+                              },
+                              "attributes": {
+                                "align": "right",
+                                "background-color": "transparent",
+                                "color": "#000000",
+                                "font-weight": "600",
+                                "border-radius": "3px",
+                                "padding": "10px 0px 10px 0px",
+                                "inner-padding": "10px 25px 10px 25px",
+                                "line-height": "120%",
+                                "target": "_blank",
+                                "vertical-align": "middle",
+                                "border": "2px solid black",
+                                "text-align": "center",
+                                "href": "https://maps.app.goo.gl/9h18kuBPjLQu6bc48",
+                                "font-size": "12px"
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "mobile-only"
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "100%",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "middle"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_section",
+                  "data": {
+                    "value": {
+                      "noWrap": false
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "background-repeat": "repeat",
+                    "background-size": "auto",
+                    "background-position": "top center",
+                    "border": "none",
+                    "direction": "ltr",
+                    "text-align": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "advanced_column",
+                      "attributes": {
+                        "width": "100%",
+                        "padding": "0px 0px 0px 0px",
+                        "vertical-align": "middle"
+                      },
+                      "data": {
+                        "value": {}
+                      },
+                      "children": [
+                        {
+                          "type": "advanced_image",
+                          "data": {
+                            "value": {}
+                          },
+                          "attributes": {
+                            "align": "center",
+                            "height": "auto",
+                            "padding": "0px 0px 10px 0px",
+                            "src": "https://img.mailinblue.com/6095823/images/content_library/original/679ba9aa7fbad20671728365.png",
+                            "width": "60%"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "advanced_column",
+                      "attributes": {
+                        "width": "100%",
+                        "padding": "0px 0px 0px 0px",
+                        "vertical-align": "middle"
+                      },
+                      "data": {
+                        "value": {}
+                      },
+                      "children": [
+                        {
+                          "type": "advanced_text",
+                          "data": {
+                            "value": {
+                              "content": "Local do evento"
+                            }
+                          },
+                          "attributes": {
+                            "padding": "0px 0px 10px 0px",
+                            "align": "center",
+                            "font-size": "18px",
+                            "font-weight": "600",
+                            "line-height": "1"
+                          },
+                          "children": []
+                        },
+                        {
+                          "type": "advanced_text",
+                          "data": {
+                            "value": {
+                              "content": "Instalações hes"
+                            }
+                          },
+                          "attributes": {
+                            "padding": "0px 0px 6px 0px",
+                            "align": "center",
+                            "font-size": "12px",
+                            "font-weight": "500",
+                            "line-height": "1"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "advanced_column",
+                      "attributes": {
+                        "width": "100%",
+                        "padding": "0px 0px 0px 0px",
+                        "vertical-align": "middle"
+                      },
+                      "data": {
+                        "value": {}
+                      },
+                      "children": [
+                        {
+                          "type": "advanced_button",
+                          "data": {
+                            "value": {
+                              "content": "Ver no mapa"
+                            }
+                          },
+                          "attributes": {
+                            "align": "center",
+                            "background-color": "transparent",
+                            "color": "#000000",
+                            "font-weight": "600",
+                            "border-radius": "3px",
+                            "padding": "10px 0px 10px 0px",
+                            "inner-padding": "10px 25px 10px 25px",
+                            "line-height": "120%",
+                            "target": "_blank",
+                            "vertical-align": "middle",
+                            "border": "2px solid black",
+                            "text-align": "center",
+                            "href": "https://maps.app.goo.gl/9h18kuBPjLQu6bc48",
+                            "font-size": "12px"
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": ""
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "100%",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "middle"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_text",
+                  "data": {
+                    "value": {
+                      "content": "Garanta o seu lugar!"
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 10px 0px",
+                    "align": "center",
+                    "font-size": "22px",
+                    "line-height": "1.4",
+                    "font-weight": "700"
+                  },
+                  "children": []
+                },
+                {
+                  "type": "advanced_text",
+                  "data": {
+                    "value": {
+                      "content": "A participação neste evento é gratuita, mas a inscrição é obrigatória. Os lugares são limitados, por isso, reserve já o seu lugar e garanta que a sua empresa está sempre um paço à frente das ameaças digitais!"
+                    }
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "align": "center",
+                    "font-size": "14px",
+                    "line-height": "1.4"
+                  },
+                  "children": []
+                },
+                {
+                  "type": "advanced_button",
+                  "data": {
+                    "value": {
+                      "content": "Inscreva-se Grátis!"
+                    }
+                  },
+                  "attributes": {
+                    "align": "center",
+                    "background-color": "#000000",
+                    "color": "#ffffff",
+                    "font-weight": "normal",
+                    "border-radius": "3px",
+                    "padding": "16px 0px 0px 0px",
+                    "inner-padding": "12px 25px 12px 25px",
+                    "line-height": "120%",
+                    "target": "_blank",
+                    "vertical-align": "middle",
+                    "border": "none",
+                    "text-align": "center",
+                    "href": "#",
+                    "font-size": "12px"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_spacer",
+          "data": {
+            "value": {}
+          },
+          "attributes": {
+            "height": "20px",
+            "padding": "   ",
+            "css-class": "desktop-only"
+          },
+          "children": []
+        },
+        {
+          "type": "advanced_social",
+          "data": {
+            "value": {
+              "elements": [
+                {
+                  "href": "https://hes.pt",
+                  "target": "_blank",
+                  "src": "https://img.mailinblue.com/6095823/images/content_library/original/679bacba7fbad206717284aa.png",
+                  "content": ""
+                },
+                {
+                  "href": "https://www.facebook.com/hessistemasinformaticos",
+                  "target": "_blank",
+                  "src": "https://img.mailinblue.com/6095823/images/content_library/original/679bacbab2bc0aa7e8340877.png",
+                  "content": ""
+                },
+                {
+                  "href": "https://www.instagram.com/hes_sistemas_informaticos/",
+                  "target": "_blank",
+                  "src": "https://img.mailinblue.com/6095823/images/content_library/original/679bacba7fbad206717284a9.png",
+                  "content": ""
+                },
+                {
+                  "href": "https://www.linkedin.com/company/hes-sistemas-informaticos",
+                  "target": "_blank",
+                  "src": "https://img.mailinblue.com/6095823/images/content_library/original/679bad87b2bc0aa7e83408b9.png",
+                  "content": ""
+                }
+              ]
+            }
+          },
+          "attributes": {
+            "align": "center",
+            "color": "#333333",
+            "mode": "horizontal",
+            "font-size": "13px",
+            "font-weight": "normal",
+            "border-radius": "3px",
+            "padding": "10px 20px 10px 20px",
+            "inner-padding": "4px 2px 4px 2px",
+            "line-height": "22px",
+            "text-padding": "4px 4px 4px 0px",
+            "icon-padding": "0px",
+            "icon-size": "30px"
+          },
+          "children": []
+        },
+        {
+          "type": "advanced_text",
+          "data": {
+            "value": {
+              "content": "© 2025 hes. Todos os direitos reservados."
+            }
+          },
+          "attributes": {
+            "padding": "0px 0px 0px 0px",
+            "align": "center",
+            "font-size": "14px",
+            "line-height": "1.4"
+          },
+          "children": []
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "0px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center"
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "50%"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_text",
+                  "data": {
+                    "value": {
+                      "content": "<a href=\"https://www.hes.pt/politica-de-privacidade\" target=\"_blank\" style=\"color: inherit; text-decoration: none;\">Política de privacidade</a>"
+                    }
+                  },
+                  "attributes": {
+                    "padding": "15px 0px 0px 0px",
+                    "align": "center",
+                    "font-size": "14px",
+                    "line-height": "1.4"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "50%"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_text",
+                  "data": {
+                    "value": {
+                      "content": "<a href=\"{{ unsubscribe }}\" target=\"_blank\" style=\"color: inherit; text-decoration: none;\">Cancelar inscrição da newsletter</a>"
+                    }
+                  },
+                  "attributes": {
+                    "padding": "15px 0px 0px 0px",
+                    "align": "center",
+                    "font-size": "14px",
+                    "line-height": "1.4"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "picture": "/src/templates/pictures/6055f7f4-ad7e-4e54-adc3-65fdc5718067.png"
+}

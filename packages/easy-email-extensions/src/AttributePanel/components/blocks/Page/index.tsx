@@ -23,25 +23,45 @@ export function Page({ hideSubTitle, hideSubject }: PageProps) {
 
   if (!focusIdx) return null;
 
+  const [submenuOpen, setSubmenuOpen] = useState(false);
+
   const [folders, setFolders] = useState([]);
   const [selectedFolder, setselectedFolder] = useState("None");
-  const [selectedFolderId, setselectedFolderId] = useState("0");
+  const [selectedFolderId, setselectedFolderId] = useState(`${window.currentFolderId}`);
 
 
   useEffect(async () => {
     let f = await (await fetch("http://localhost:4000/api/folders")).json();
+
+    f.forEach(folder => {
+      folder.subfolders.forEach(subfolder => {
+        if (subfolder.id === selectedFolderId) {
+          setselectedFolder(subfolder.name);
+        }
+      });
+    });
 
     setFolders(f);
 
     const selectFolder = (e) => {
       setselectedFolder(e.detail.name);
       setselectedFolderId(e.detail.id);
+      setSubmenuOpen(false);
+      window.dispatchEvent(new CustomEvent("updateFolder", { detail: e.detail.id }));
+    };
+
+    const closeMenu = (e) => {
+      if ((e.target as HTMLElement).closest("#folderSettings")) return;
+
+      setSubmenuOpen(false);
     };
 
     window.addEventListener("handleSelectFolder", selectFolder);
+    window.addEventListener("click", closeMenu);
 
     return () => {
       window.removeEventListener("handleSelectFolder", selectFolder);
+      window.removeEventListener("click", closeMenu);
     };
   }, []);
 
@@ -54,17 +74,19 @@ export function Page({ hideSubTitle, hideSubject }: PageProps) {
             header={t('Template Settings')}
           >
             <Space direction='vertical'>
-              <div style={{ position: "relative" }}>
-                {selectedFolder}
+              <div style={{ position: "relative" }} id="folderSettings">
+                <button onClick={() => setSubmenuOpen(!submenuOpen)}>{selectedFolder}</button>
                 <input type="hidden" value={selectedFolderId}></input>
-                <div id="folderOptions">
+
+                <div id="folderOptions" className={submenuOpen ? 'open' : ''}>
+                  <label key="noneSub" className={`subfolder ${"0" === selectedFolderId ? 'isSelected' : ''}`} onClick={() => { window.dispatchEvent(new CustomEvent("handleSelectFolder", { detail: { id: "0", name: "None" } })); }}>None</label>
 
                   {folders.map((folder) => (
                     <span key={folder.id}>
                       <label className='folder'>{folder.folderName}</label>
                       {
                         folder.subfolders.map((item) => ( //Submenus
-                          <label key={item.id} className='subfolder' onClick={() => { window.dispatchEvent(new CustomEvent("handleSelectFolder", { detail: { id: item.id, name: item.name } })); }}>{item.name}</label>
+                          <label key={item.id} className={`subfolder ${item.id === selectedFolderId ? 'isSelected' : ''}`} onClick={() => { window.dispatchEvent(new CustomEvent("handleSelectFolder", { detail: { id: item.id, name: item.name } })); }}>{item.name}</label>
                         ))
                       }
                     </span>
