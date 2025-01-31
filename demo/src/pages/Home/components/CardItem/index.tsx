@@ -80,7 +80,20 @@ export function CardItem(props: CardItemProps) {
 
     >
       <div className={styles.bottom}>
-        <div className={`${styles.title} cardTitle`}>{data.title}</div>
+        <div className={`${styles.title} cardTitle`}>
+          <Link
+            to={`/editor?path=${data.path}`}
+            className='templateName'
+            onClick={() => {
+              return pushEvent({
+                event: 'Edit',
+                payload: { article_id: data.article_id, title: data.title },
+              });
+            }
+            }
+          >{data.title}
+          </Link>
+        </div>
         <div className={`${styles.title} cardCreateAt`}>
           {dayjs(data.created_at * 1000).format('DD-MM-YYYY')}
         </div>

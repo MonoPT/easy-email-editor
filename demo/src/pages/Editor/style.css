@@ -3,3 +3,7 @@
     max-height: 100svh;
     overflow: hidden;
 }
+
+.arco-layout-sider.arco-layout-sider-light .arco-layout-sider-children {
+    overflow: hidden;
+}

@@ -1,12 +1,12 @@
 {
   "uuid": "6055f7f4-ad7e-4e54-adc3-65fdc5718067",
-  "title": "Save the date Coffe & Tech",
+  "title": "Save the date / Inscrição",
   "summary": "",
   "created_at": 1738236499,
-  "updated_at": 1738321508,
-  "folder": "3",
+  "updated_at": 1738327429,
+  "folder": "Coffe & Tech Templates 123",
   "data": {
-    "subject": "Save the date Coffe & Tech",
+    "subject": "Save the date / Inscrição",
     "subTitle": "",
     "content": {
       "type": "page",
@@ -1698,7 +1698,7 @@
                   "type": "advanced_text",
                   "data": {
                     "value": {
-                      "content": "A participação neste evento é gratuita, mas a inscrição é obrigatória. Os lugares são limitados, por isso, reserve já o seu lugar e garanta que a sua empresa está sempre um paço à frente das ameaças digitais!"
+                      "content": "A participação neste evento é gratuita, mas a inscrição é obrigatória. Os lugares são limitados, por isso, reserve já o seu lugar e garanta que a sua empresa está sempre um passo à frente das ameaças digitais!"
                     }
                   },
                   "attributes": {

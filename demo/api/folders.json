@@ -14,6 +14,10 @@
       {
         "name": "Folder 3",
         "id": "3"
+      },
+      {
+        "name": "Coffe & Tech",
+        "id": "Coffe & Tech Templates 123"
       }
     ]
   },
@@ -32,6 +36,16 @@
       {
         "name": "Folder 3",
         "id": "33"
+      }
+    ]
+  },
+  {
+    "folderName": "Coffe & Tech",
+    "id": "Coffe&Tech",
+    "subfolders": [
+      {
+        "id": "minitel-1",
+        "name": "Minitel"
       }
     ]
   }
