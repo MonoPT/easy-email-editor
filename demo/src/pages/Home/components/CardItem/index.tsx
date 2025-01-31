@@ -1,6 +1,6 @@
 import { IArticle } from '@demo/services/article';
 import React, { useCallback } from 'react';
-import { IconEdit, IconDelete } from '@arco-design/web-react/icon';
+import { IconEdit, IconDelete, IconCopy } from '@arco-design/web-react/icon';
 import dayjs from 'dayjs';
 import styles from './index.module.scss';
 import { Popconfirm } from '@arco-design/web-react';
@@ -34,7 +34,7 @@ export function CardItem(props: CardItemProps) {
       headers: {
         'Content-Type': 'application/json' // Set the Content-Type to JSON
       },
-      body: JSON.stringify({uuid})
+      body: JSON.stringify({ uuid })
     });
 
     if (res.status !== 200) {
@@ -57,7 +57,7 @@ export function CardItem(props: CardItemProps) {
         headers: {
           'Content-Type': 'application/json' // Set the Content-Type to JSON
         },
-        body: JSON.stringify({uuid})
+        body: JSON.stringify({ uuid })
       });
 
       if (res.status === 200) {
@@ -67,7 +67,7 @@ export function CardItem(props: CardItemProps) {
         history.push(`/editor?path=${uuid}.json`);
       }
 
-      
+
     },
     [data, dispatch, history]
   );
@@ -75,13 +75,14 @@ export function CardItem(props: CardItemProps) {
   return (
     <div
       key={data.path}
-      className={styles.templeteItem}
-      style={{ backgroundImage: `url(${data.picture})` }}
+      className={`${styles.templeteItem} cardWrapper`}
+      style={{ backgroundImage: `url(${data.picture})`, '--bgImage': `url(${data.picture})` } as React.CSSProperties}
+
     >
       <div className={styles.bottom}>
-        <div className={styles.title}>Title: {data.title}</div>
-        <div className={styles.title}>
-          Date {dayjs(data.created_at * 1000).format('YYYY-MM-DD')}
+        <div className={`${styles.title} cardTitle`}>{data.title}</div>
+        <div className={`${styles.title} cardCreateAt`}>
+          {dayjs(data.created_at * 1000).format('DD-MM-YYYY')}
         </div>
       </div>
       <div className={styles.mask}>
@@ -90,24 +91,12 @@ export function CardItem(props: CardItemProps) {
             <Loading loading color='#ffffff' />
           </div>
         ) : (
-          <div className={styles.listBottom}>
-            <div className={styles.listItem}>
-              <Popconfirm
-                title='Are you want to delete it?'
-                onConfirm={onDelete}
-                okText='Ok'
-                cancelText='Cancel'
-              >
-                <IconDelete />
-                &nbsp;Delete
-              </Popconfirm>
-            </div>
+          <div className={`${styles.listBottom} actionsWrapper`}>
+
             <div className={styles.listItem}>
               <Link
                 to={`/editor?path=${data.path}`}
                 onClick={() => {
-                  ///editor?id=${data.article_id}&userId=${data.user_id}
-                  //`/editor?path=${data.path}`
                   return pushEvent({
                     event: 'Edit',
                     payload: { article_id: data.article_id, title: data.title },
@@ -119,11 +108,27 @@ export function CardItem(props: CardItemProps) {
                 &nbsp;Edit
               </Link>
             </div>
+
             <div className={styles.listItem}>
               <Link to='javascript:void(0)' onClick={onDuplicate}>
+                <IconCopy />
                 Duplicate
               </Link>
             </div>
+
+            <div className={`${styles.listItem} deleteAction`}>
+              <Popconfirm
+                title='Are you want to delete it?'
+                onConfirm={onDelete}
+                okText='Ok'
+                cancelText='Cancel'
+              >
+                <IconDelete />
+                &nbsp;Delete
+              </Popconfirm>
+            </div>
+
+
           </div>
         )}
       </div>

@@ -6,6 +6,11 @@
   >button {
     margin-block: 1rem;
   }
+
+  .arco-menu-icon-suffix,
+  .arco-menu-inline-header span {
+    pointer-events: none;
+  }
 }
 
 .arco-menu-inner {

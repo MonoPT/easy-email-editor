@@ -1,3 +1,4 @@
+import './override.css';
 import { useAppSelector } from '@demo/hooks/useAppSelector';
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
@@ -29,6 +30,7 @@ export default function Home() {
   const dispatch = useDispatch();
   const list = useAppSelector('templateList');
   const [categoria, setCategoria] = useState("0");
+  const [subfolder, setSubfolder] = useState("All Templates");
 
   let templates = JSON.parse(makeRequest("http://localhost:4000/api/templates"));
 
@@ -39,10 +41,16 @@ export default function Home() {
       setCategoria(e.detail);
     };
 
+    const updateFolderName = (e) => {
+      setSubfolder(e.detail);
+    };
+
     window.addEventListener('updateTemplateTab', handleUpdateTemplateTab);
+    window.addEventListener('UpdateSelectedFolderName', updateFolderName);
 
     return () => {
       window.removeEventListener('updateTemplateTab', handleUpdateTemplateTab);
+      window.removeEventListener('UpdateSelectedFolderName', updateFolderName);
     };
   }, [dispatch]);
 
@@ -51,7 +59,7 @@ export default function Home() {
 
   return (
     <Frame
-      title='Templates'
+      title={subfolder}
       primaryAction={
         <Button
           onClick={() => {

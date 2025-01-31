@@ -537,79 +537,85 @@ export default function Editor() {
                 <PageHeader
                   style={{ background: 'var(--color-bg-2)' }}
                   backIcon
-                  title='Edit'
+                  title={
+                    <span>{templateData.subject}</span>
+                  }
                   onBack={() => history.push('/')}
+
                   extra={
-                    <Stack alignment='center'>
-                      <Button
-                        key='Save Template'
-                        onClick={() => onSaveTemplate(values)}
-                      >
-                        <strong>Save</strong>
-                      </Button>
-
-                      <Dropdown
-                        droplist={
-                          <Menu>
-                            <Menu.Item
-                              key='MJML'
-                              onClick={() => onImportMJML({ restart })}
-                            >
-                              Import from MJML
-                            </Menu.Item>
-
-                            <Menu.Item
-                              key='JSON'
-                              onClick={() => onImportJSON({ restart })}
-                            >
-                              Import from JSON
-                            </Menu.Item>
-                          </Menu>
-                        }
-                      >
-                        <Button>
-                          <strong>Import</strong>
+                    <>
+                      <Stack alignment='center'>
+                        <Button
+                          key='Save Template'
+                          onClick={() => onSaveTemplate(values)}
+                        >
+                          <strong>Save</strong>
                         </Button>
-                      </Dropdown>
 
-                      <Dropdown
-                        droplist={
-                          <Menu>
-                            <Menu.Item
-                              key='Export MJML'
-                              onClick={() => onExportMJML(values)}
-                            >
-                              Export MJML
-                            </Menu.Item>
-                            <Menu.Item
-                              key='Export HTML'
-                              onClick={() => onExportHTML(values)}
-                            >
-                              Export HTML
-                            </Menu.Item>
+                        <Dropdown
+                          droplist={
+                            <Menu>
+                              <Menu.Item
+                                key='MJML'
+                                onClick={() => onImportMJML({ restart })}
+                              >
+                                Import from MJML
+                              </Menu.Item>
 
-                            <Menu.Item
-                              key='Copy HTML'
-                              onClick={() => onExportCopyHTML(values)}
-                            >
-                              Copy HTML
-                            </Menu.Item>
+                              <Menu.Item
+                                key='JSON'
+                                onClick={() => onImportJSON({ restart })}
+                              >
+                                Import from JSON
+                              </Menu.Item>
+                            </Menu>
+                          }
+                        >
+                          <Button>
+                            <strong>Import</strong>
+                          </Button>
+                        </Dropdown>
 
-                            <Menu.Item
-                              key='Export JSON'
-                              onClick={() => onExportJSON(values)}
-                            >
-                              Export JSON
-                            </Menu.Item>
-                          </Menu>
-                        }
-                      >
-                        <Button>
-                          <strong>Export</strong>
-                        </Button>
-                      </Dropdown>
+                        <Dropdown
+                          droplist={
+                            <Menu>
+                              <Menu.Item
+                                key='Export MJML'
+                                onClick={() => onExportMJML(values)}
+                              >
+                                Export MJML
+                              </Menu.Item>
+                              <Menu.Item
+                                key='Export HTML'
+                                onClick={() => onExportHTML(values)}
+                              >
+                                Export HTML
+                              </Menu.Item>
 
-                    </Stack>
+                              <Menu.Item
+                                key='Copy HTML'
+                                onClick={() => onExportCopyHTML(values)}
+                              >
+                                Copy HTML
+                              </Menu.Item>
+
+                              <Menu.Item
+                                key='Export JSON'
+                                onClick={() => onExportJSON(values)}
+                              >
+                                Export JSON
+                              </Menu.Item>
+                            </Menu>
+                          }
+                        >
+                          <Button>
+                            <strong>Export</strong>
+                          </Button>
+                        </Dropdown>
+
+                      </Stack>
+                    </>
+
                   }
                 />
 

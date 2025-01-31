@@ -3,7 +3,7 @@
   "title": "Save the date Coffe & Tech",
   "summary": "",
   "created_at": 1738236499,
-  "updated_at": 1738256573,
+  "updated_at": 1738321508,
   "folder": "3",
   "data": {
     "subject": "Save the date Coffe & Tech",
@@ -50,7 +50,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": "desktop-only"
+            "css-class": "",
+            "display-device": "desktop"
           },
           "children": [
             {
@@ -136,7 +137,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": "mobile-only"
+            "css-class": "",
+            "display-device": "mobile"
           },
           "children": [
             {
@@ -222,7 +224,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": "desktop-only"
+            "css-class": "",
+            "display-device": "desktop"
           },
           "children": [
             {
@@ -337,7 +340,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": "mobile-only"
+            "css-class": "",
+            "display-device": "mobile"
           },
           "children": [
             {
@@ -427,7 +431,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": "mobile-only"
+            "css-class": "",
+            "display-device": "mobile"
           },
           "children": [
             {
@@ -474,7 +479,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": ""
+            "css-class": "",
+            "display-device": "any"
           },
           "children": [
             {
@@ -539,7 +545,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": "desktop-only"
+            "css-class": "",
+            "display-device": "desktop"
           },
           "children": [
             {
@@ -748,7 +755,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": "mobile-only"
+            "css-class": "",
+            "display-device": "mobile"
           },
           "children": [
             {
@@ -960,7 +968,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": "desktop-only"
+            "css-class": "",
+            "display-device": "desktop"
           },
           "children": [
             {
@@ -1135,7 +1144,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": "mobile-only"
+            "css-class": "",
+            "display-device": "mobile"
           },
           "children": [
             {
@@ -1313,7 +1323,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": "desktop-only"
+            "css-class": "",
+            "display-device": "desktop"
           },
           "children": [
             {
@@ -1488,7 +1499,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": "mobile-only"
+            "css-class": "",
+            "display-device": "mobile"
           },
           "children": [
             {
@@ -1651,7 +1663,8 @@
             "direction": "ltr",
             "text-align": "center",
             "background-color": "#fff",
-            "css-class": ""
+            "css-class": "",
+            "display-device": "any"
           },
           "children": [
             {
@@ -1814,7 +1827,8 @@
             "background-position": "top center",
             "border": "none",
             "direction": "ltr",
-            "text-align": "center"
+            "text-align": "center",
+            "display-device": "any"
           },
           "children": [
             {

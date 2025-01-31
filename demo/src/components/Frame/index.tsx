@@ -6,9 +6,11 @@ import { githubButtonGenerate } from '@demo/utils/githubButtonGenerate';
 import { useShowCommercialEditor } from '@demo/hooks/useShowCommercialEditor';
 import { Button } from '@arco-design/web-react';
 import { useState } from 'react';
+import { IconEdit, IconDelete } from '@arco-design/web-react/icon';
+
 
 import './style.css';
-
+import './contextMenu';
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -32,11 +34,30 @@ export default function Frame({
   const [folders, setFolders] = useState([]);
 
   useEffect(async () => {
+    const folders = await (await fetch("http://localhost:4000/api/folders")).json();
+
+    setFolders(folders);
+
     const handleUpdateTemplateTab = (e) => {
       folderSelected = e.detail;
+
+      if (e.detail === "0") {
+        window.dispatchEvent(new CustomEvent("UpdateSelectedFolderName", { detail: "All Templates" }));
+        return;
+      }
+
+      folders.forEach(element => {
+        let folder = element.folderName;
+
+        element.subfolders.forEach(element => {
+          if (element.id === e.detail) {
+            window.dispatchEvent(new CustomEvent("UpdateSelectedFolderName", { detail: `${folder} / ${element.name}` }));
+          }
+        });
+      });
     };
 
-    setFolders(await (await fetch("http://localhost:4000/api/folders")).json());
+
 
     window.addEventListener('updateTemplateTab', handleUpdateTemplateTab);
 
@@ -86,10 +107,11 @@ export default function Frame({
               <SubMenu
                 key={item.id}
                 title={item.folderName}
+                className={`MenuItemTemplateFolder`}
               >
 
                 {item.subfolders.map((item) => ( //Submenus
-                  <Menu.Item key={item.id} onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", { detail: item.id }))}>{item.name}</Menu.Item>
+                  <Menu.Item className={`MenuItemTemplateSubfolder`} key={item.id} onClick={() => window.dispatchEvent(new CustomEvent("updateTemplateTab", { detail: item.id }))}>{item.name}</Menu.Item>
                 ))}
 
                 <Button
