@@ -410,8 +410,6 @@ export default function Editor() {
         createdTime = timestamp;
       }
 
-      console.log(fileUUID);
-
       let payload = {
         uuid: fileUUID,
         title: values.subject,

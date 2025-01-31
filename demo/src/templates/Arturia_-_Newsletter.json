@@ -1,12 +1,12 @@
 {
   "uuid": "Arturia_-_Newsletter",
-  "title": "Arturia - Newsletter teste",
+  "title": "Arturia - Newsletter",
   "summary": "Nice to meet you!",
   "created_at": 1738150778,
-  "updated_at": 1738150778,
+  "updated_at": 1738342199,
   "folder": "1",
   "data": {
-    "subject": "Arturia - Newsletter teste",
+    "subject": "Arturia - Newsletter",
     "subTitle": "Nice to meet you!",
     "content": {
       "type": "page",
