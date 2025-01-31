@@ -1,7 +1,7 @@
 import React from 'react';
 import { Padding } from '@extensions/AttributePanel/components/attributes//Padding';
 import { Background } from '@extensions/AttributePanel/components/attributes//Background';
-import { TextField } from '@extensions/components/Form';
+import { TextField, SelectField } from '@extensions/components/Form';
 import { AttributesPanelWrapper } from '@extensions/AttributePanel/components/attributes/AttributesPanelWrapper';
 import { Collapse, Grid } from '@arco-design/web-react';
 import { Stack, useFocusIdx } from 'easy-email-editor';
@@ -12,7 +12,19 @@ export function Wrapper() {
   const { focusIdx } = useFocusIdx();
   return (
     <AttributesPanelWrapper style={{ padding: 0 }}>
-      <CollapseWrapper defaultActiveKey={['0', '1', '2']}>
+      <CollapseWrapper defaultActiveKey={['0', '1', '2', '5']}>
+        <Collapse.Item
+          name='5'
+          header={t('Display')}
+        >
+          <Grid.Col span={24}>
+            <SelectField
+              label={t('Render on')}
+              name={`${focusIdx}.attributes.display-device`}
+              options={[{ value: "any", label: "Mobile and Desktop" }, { value: "mobile", label: "Mobile Only" }, { value: "desktop", label: "Desktop Only" }]}
+            />
+          </Grid.Col>
+        </Collapse.Item>
         <Collapse.Item name='0' header={t('Dimension')}>
           <Stack vertical spacing='tight'>
             <Padding />

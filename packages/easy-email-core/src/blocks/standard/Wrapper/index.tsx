@@ -12,6 +12,7 @@ export type IWrapper = IBlockData<
     border?: string;
     'border-radius'?: string;
     'full-width'?: string;
+    'display-device': string;
     direction?: 'ltr' | 'rtl';
     padding?: string;
     'text-align'?: CSSProperties['textAlign'];
@@ -35,6 +36,7 @@ export const Wrapper = createBlock<IWrapper>({
         border: 'none',
         direction: 'ltr',
         'text-align': 'center',
+        'display-device': 'any'
       },
       children: [],
     };

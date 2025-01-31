@@ -8,7 +8,7 @@ import { Stack, useBlock, useFocusIdx } from 'easy-email-editor';
 import { BasicType, BlockManager } from 'easy-email-core';
 import { ClassName } from '../../attributes/ClassName';
 import { CollapseWrapper } from '../../attributes/CollapseWrapper';
-import { TextField } from '@extensions/components/Form';
+import { TextField, SelectField } from '@extensions/components/Form';
 
 export function Section() {
   const { focusBlock, setFocusBlock } = useBlock();
@@ -48,7 +48,19 @@ export function Section() {
 
   return (
     <AttributesPanelWrapper style={{ padding: 0 }}>
-      <CollapseWrapper defaultActiveKey={['0', '1', '2']}>
+      <CollapseWrapper defaultActiveKey={['0', '1', '2', '5']}>
+        <Collapse.Item
+          name='5'
+          header={t('Display')}
+        >
+          <Grid.Col span={24}>
+            <SelectField
+              label={t('Render on')}
+              name={`${focusIdx}.attributes.display-device`}
+              options={[{ value: "any", label: "Mobile and Desktop" }, { value: "mobile", label: "Mobile Only" }, { value: "desktop", label: "Desktop Only" }]}
+            />
+          </Grid.Col>
+        </Collapse.Item>
         <Collapse.Item
           name='0'
           header={t('Dimension')}

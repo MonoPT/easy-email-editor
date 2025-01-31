@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react';
 import { IBlockData } from '@core/typings';
-import { BasicType } from '@core/constants';
+import { AdvancedType, BasicType } from '@core/constants';
 import { createBlock } from '@core/utils/createBlock';
 import { merge } from 'lodash';
 import { t } from '@core/utils';
@@ -15,6 +15,7 @@ export type ISection = IBlockData<
     'background-repeat'?: 'repeat' | 'no-repeat';
     'background-size'?: string;
     'background-url'?: string;
+    'display-device': string;
     border?: string;
     'border-radius'?: string;
     direction?: 'ltr' | 'rtl';
@@ -47,6 +48,7 @@ export const Section = createBlock<ISection>({
         border: 'none',
         direction: 'ltr',
         'text-align': 'center',
+        'display-device': 'any'
       },
       children: [],
     };

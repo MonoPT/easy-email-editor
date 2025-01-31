@@ -29,6 +29,7 @@ export function JsonToMjml(options: JsonToMjmlOption): string {
   if (!block) {
     throw new Error(`Block ${data.type} not found`);
   }
+
   const mjmlString = unescape(
     renderToStaticMarkup(
       <EmailRenderProvider
