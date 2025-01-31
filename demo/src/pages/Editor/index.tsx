@@ -410,6 +410,8 @@ export default function Editor() {
         createdTime = timestamp;
       }
 
+      console.log(fileUUID);
+
       let payload = {
         uuid: fileUUID,
         title: values.subject,
@@ -432,6 +434,9 @@ export default function Editor() {
       });
 
       if (res.status === 200) {
+        let data = await res.json();
+
+        fileUUID = data.uuid;
         console.log("save success");
       } else {
         console.error("could not save", res);

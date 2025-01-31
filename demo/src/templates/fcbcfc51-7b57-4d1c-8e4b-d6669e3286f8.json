@@ -1,0 +1,322 @@
+{
+  "uuid": "fcbcfc51-7b57-4d1c-8e4b-d6669e3286f8",
+  "title": "hes mensal",
+  "summary": "",
+  "created_at": 1738340023,
+  "updated_at": 1738341141,
+  "folder": "2",
+  "data": {
+    "subject": "hes mensal",
+    "subTitle": "",
+    "content": {
+      "type": "page",
+      "data": {
+        "value": {
+          "breakpoint": "480px",
+          "headAttributes": "",
+          "font-size": "14px",
+          "font-weight": "400",
+          "line-height": "1.7",
+          "headStyles": [],
+          "fonts": [
+            {
+              "name": "inter",
+              "href": "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            }
+          ],
+          "responsive": true,
+          "font-family": "inter,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif",
+          "text-color": "#000000"
+        }
+      },
+      "attributes": {
+        "width": "600px",
+        "background-color": "#fff"
+      },
+      "children": [
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "",
+            "display-device": "desktop"
+          },
+          "children": [
+            {
+              "type": "group",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "vertical-align": "middle",
+                "direction": "ltr"
+              },
+              "children": [
+                {
+                  "type": "advanced_column",
+                  "attributes": {
+                    "width": "100%",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  },
+                  "data": {
+                    "value": {}
+                  },
+                  "children": [
+                    {
+                      "type": "advanced_image",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "align": "right",
+                        "padding": "0px 0px 0px 0px",
+                        "src": "https://img.mailinblue.com/6095823/images/content_library/original/679b62d2c9d4d573b99c9465.png",
+                        "width": "70%"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-color": "#fff",
+            "css-class": "",
+            "display-device": "mobile"
+          },
+          "children": [
+            {
+              "type": "group",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "vertical-align": "middle",
+                "direction": "ltr"
+              },
+              "children": [
+                {
+                  "type": "advanced_column",
+                  "attributes": {
+                    "width": "100%",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  },
+                  "data": {
+                    "value": {}
+                  },
+                  "children": [
+                    {
+                      "type": "advanced_image",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "align": "right",
+                        "padding": "0px 0px 0px 0px",
+                        "src": "https://img.mailinblue.com/6095823/images/content_library/original/679b62d2c9d4d573b99c9465.png",
+                        "width": "50%"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "advanced_spacer",
+          "data": {
+            "value": {}
+          },
+          "attributes": {
+            "height": "20px",
+            "padding": "   ",
+            "css-class": "desktop-only"
+          },
+          "children": []
+        },
+        {
+          "type": "advanced_wrapper",
+          "data": {
+            "value": {}
+          },
+          "attributes": {
+            "padding": "20px 0px 20px 0px",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "display-device": "any"
+          },
+          "children": []
+        },
+        {
+          "type": "advanced_social",
+          "data": {
+            "value": {
+              "elements": [
+                {
+                  "href": "https://hes.pt",
+                  "target": "_blank",
+                  "src": "https://img.mailinblue.com/6095823/images/content_library/original/679bacba7fbad206717284aa.png",
+                  "content": ""
+                },
+                {
+                  "href": "https://www.facebook.com/hessistemasinformaticos",
+                  "target": "_blank",
+                  "src": "https://img.mailinblue.com/6095823/images/content_library/original/679bacbab2bc0aa7e8340877.png",
+                  "content": ""
+                },
+                {
+                  "href": "https://www.instagram.com/hes_sistemas_informaticos/",
+                  "target": "_blank",
+                  "src": "https://img.mailinblue.com/6095823/images/content_library/original/679bacba7fbad206717284a9.png",
+                  "content": ""
+                },
+                {
+                  "href": "https://www.linkedin.com/company/hes-sistemas-informaticos",
+                  "target": "_blank",
+                  "src": "https://img.mailinblue.com/6095823/images/content_library/original/679bad87b2bc0aa7e83408b9.png",
+                  "content": ""
+                }
+              ]
+            }
+          },
+          "attributes": {
+            "align": "center",
+            "color": "#333333",
+            "mode": "horizontal",
+            "font-size": "13px",
+            "font-weight": "normal",
+            "border-radius": "3px",
+            "padding": "10px 20px 10px 20px",
+            "inner-padding": "4px 2px 4px 2px",
+            "line-height": "22px",
+            "text-padding": "4px 4px 4px 0px",
+            "icon-padding": "0px",
+            "icon-size": "30px"
+          },
+          "children": []
+        },
+        {
+          "type": "advanced_text",
+          "data": {
+            "value": {
+              "content": "© 2025 hes. Todos os direitos reservados."
+            }
+          },
+          "attributes": {
+            "padding": "0px 0px 0px 0px",
+            "align": "center",
+            "font-size": "14px",
+            "line-height": "1.4"
+          },
+          "children": []
+        },
+        {
+          "type": "advanced_section",
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "attributes": {
+            "padding": "0px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center",
+            "display-device": "any"
+          },
+          "children": [
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "50%"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_text",
+                  "data": {
+                    "value": {
+                      "content": "<a href=\"https://www.hes.pt/politica-de-privacidade\" target=\"_blank\" style=\"color: inherit; text-decoration: none;\">Política de privacidade</a>"
+                    }
+                  },
+                  "attributes": {
+                    "padding": "15px 0px 0px 0px",
+                    "align": "center",
+                    "font-size": "14px",
+                    "line-height": "1.4"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "advanced_column",
+              "attributes": {
+                "width": "50%"
+              },
+              "data": {
+                "value": {}
+              },
+              "children": [
+                {
+                  "type": "advanced_text",
+                  "data": {
+                    "value": {
+                      "content": "<a href=\"{{ unsubscribe }}\" target=\"_blank\" style=\"color: inherit; text-decoration: none;\">Cancelar inscrição da newsletter</a>"
+                    }
+                  },
+                  "attributes": {
+                    "padding": "15px 0px 0px 0px",
+                    "align": "center",
+                    "font-size": "14px",
+                    "line-height": "1.4"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "picture": "/src/templates/pictures/fcbcfc51-7b57-4d1c-8e4b-d6669e3286f8.png"
+}

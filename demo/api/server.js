@@ -42,6 +42,9 @@ app.get('/api/templates', (req, res) => {
     templates.push(data);
   });
 
+  templates = templates.sort((a, b) => b.created_at - a.created_at);
+
+
   res.json(templates);
 });
 
@@ -66,7 +69,7 @@ app.post("/api/template", (req, res) => {
 
   saveJsonToFile(requestBody, `${path}/${uuid}.json`);
 
-  res.json({ received: requestBody });
+  res.json({ uuid });
 })
 
 app.post("/api/template/duplicate", (req, res) => {

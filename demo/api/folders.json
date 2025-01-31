@@ -8,12 +8,8 @@
         "id": "1"
       },
       {
-        "name": "Folder 2",
+        "name": "Newsletters",
         "id": "2"
-      },
-      {
-        "name": "Folder 3",
-        "id": "3"
       },
       {
         "name": "Coffe & Tech",
@@ -46,6 +42,16 @@
       {
         "id": "minitel-1",
         "name": "Minitel"
+      }
+    ]
+  },
+  {
+    "folderName": "Newsletters",
+    "id": "newsletters-1",
+    "subfolders": [
+      {
+        "id": "sadsadadadsad",
+        "name": "hes mensal"
       }
     ]
   }

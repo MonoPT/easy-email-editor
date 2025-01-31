@@ -3,8 +3,8 @@
   "title": "testes - Newsletter",
   "summary": "Nice to meet you!",
   "created_at": 1645697987,
-  "updated_at": 1738317574,
-  "folder": "2",
+  "updated_at": 1738338915,
+  "folder": "1",
   "data": {
     "subject": "testes - Newsletter",
     "subTitle": "Nice to meet you!",
@@ -201,7 +201,7 @@
             "background-color": "white",
             "padding": "20px 0px 20px 0px",
             "section-display-type": "teste",
-            "display-device": "mobile"
+            "display-device": "any"
           },
           "children": [
             {
